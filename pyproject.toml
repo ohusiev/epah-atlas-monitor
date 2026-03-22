@@ -1,0 +1,14 @@
+[project]
+name = "epah-dashboard"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "streamlit>=1.32.0",
+    "pandas>=2.0.0",
+    "plotly>=5.18.0",
+    "requests>=2.31.0",
+    "beautifulsoup4>=4.12.0",
+]
+
+[tool.uv]
+dev-dependencies = []

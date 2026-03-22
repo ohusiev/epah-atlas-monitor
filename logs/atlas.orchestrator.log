@@ -1,0 +1,32 @@
+2026-03-22 11:29:23,601 | INFO | atlas.orchestrator | Pipeline starting. DB path: data\epah_pipeline.db
+2026-03-22 11:29:23,602 | INFO | atlas.orchestrator | Initialising database.
+2026-03-22 11:29:23,640 | INFO | atlas.orchestrator | Starting Stage 1 (discovery).
+2026-03-22 11:29:23,834 | INFO | atlas.orchestrator | project_index upserted — inserted: 0, updated: 0
+2026-03-22 11:29:23,843 | INFO | atlas.orchestrator | Stage 1 completed successfully.
+2026-03-22 11:29:23,849 | INFO | atlas.orchestrator | Stage 2 skipped — no projects require parsing.
+2026-03-22 11:29:23,849 | INFO | atlas.orchestrator | Pipeline finished.
+2026-03-22 13:39:02,474 | INFO | atlas.orchestrator | Pipeline starting. DB path: data\epah_pipeline.db
+2026-03-22 13:39:02,480 | INFO | atlas.orchestrator | Database validated.
+2026-03-22 13:39:02,486 | INFO | atlas.orchestrator | Stage 1 skipped — last successful run is within 1 hours.
+2026-03-22 13:39:02,492 | INFO | atlas.orchestrator | Stage 2 skipped — no projects require parsing.
+2026-03-22 13:39:02,492 | INFO | atlas.orchestrator | Pipeline finished.
+2026-03-22 13:42:20,061 | INFO | atlas.orchestrator | Pipeline starting. DB path: data\epah_pipeline.db
+2026-03-22 13:42:20,067 | INFO | atlas.orchestrator | Database validated.
+2026-03-22 13:42:20,072 | INFO | atlas.orchestrator | Starting Stage 1 (discovery).
+2026-03-22 13:48:08,505 | INFO | atlas.orchestrator | project_index upserted — inserted: 321, updated: 19
+2026-03-22 13:48:08,515 | INFO | atlas.orchestrator | Stage 1 completed successfully.
+2026-03-22 13:48:08,521 | INFO | atlas.orchestrator | Stage 2 starting — 321 projects selected.
+2026-03-22 13:48:25,329 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-22 13:48:45,100 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-22 13:49:09,918 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229997
+2026-03-22 13:49:27,634 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229995
+2026-03-22 13:49:44,255 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229994
+2026-03-22 13:50:01,013 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229993
+2026-03-22 13:50:27,545 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229992
+2026-03-22 13:50:46,261 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229991
+2026-03-22 13:51:10,914 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229889
+2026-03-22 13:51:27,470 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229876
+2026-03-22 13:51:41,158 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229874
+2026-03-22 13:51:59,897 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229867
+2026-03-22 13:52:12,569 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229866
+2026-03-22 13:52:22,176 | INFO | atlas.orchestrator | Stage 2 parsed: https://energy-poverty.ec.europa.eu/node/229865

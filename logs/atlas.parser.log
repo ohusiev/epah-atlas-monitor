@@ -1,0 +1,1729 @@
+2026-03-21 14:05:24,290 | INFO | atlas.stage1 | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 14:05:24,292 | INFO | atlas.stage1 | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 14:05:29,111 | INFO | atlas.stage1 | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=4.82s
+2026-03-21 14:05:42,205 | INFO | atlas.stage1 | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 14:05:51,599 | INFO | atlas.stage1 | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=9.39s
+2026-03-21 14:06:01,697 | INFO | atlas.stage1 | Saved detailed parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_details_atlas_projects_20260321T130601Z.json
+2026-03-21 14:13:54,337 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 14:13:54,339 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 14:14:01,795 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=7.46s
+2026-03-21 14:14:11,889 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 14:14:20,223 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=8.33s
+2026-03-21 14:14:35,329 | INFO | atlas.parser | Saved detailed parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_details_atlas_projects_20260321T131435Z.json
+2026-03-21 20:36:16,740 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 20:36:16,742 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+2026-03-21 20:36:23,179 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas | status=200 | duration=6.44s
+2026-03-21 20:36:23,239 | INFO | atlas.parser | extract_last_page_number() detected last page number 14 at 2026-03-21T20:36:23
+2026-03-21 20:36:23,239 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0
+2026-03-21 20:36:29,065 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0 | status=200 | duration=5.83s
+2026-03-21 20:36:29,130 | INFO | atlas.parser | extract_projects() found 25 projects on list page 0
+2026-03-21 20:36:33,134 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1
+2026-03-21 20:38:40,194 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 20:38:40,196 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+2026-03-21 20:38:52,431 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas | status=200 | duration=12.24s
+2026-03-21 20:38:52,490 | INFO | atlas.parser | extract_last_page_number() detected last page number 14 at 2026-03-21T20:38:52
+2026-03-21 20:38:52,491 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0
+2026-03-21 20:39:07,178 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 20:39:07,180 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+2026-03-21 20:39:19,859 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas | status=200 | duration=12.68s
+2026-03-21 20:39:19,936 | INFO | atlas.parser | extract_last_page_number() detected last page number 14 at 2026-03-21T20:39:19
+2026-03-21 20:39:19,937 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0
+2026-03-21 20:39:27,854 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0 | status=200 | duration=7.92s
+2026-03-21 20:39:27,918 | INFO | atlas.parser | extract_projects() found 25 projects on list page 0
+2026-03-21 20:39:43,931 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1
+2026-03-21 20:39:49,016 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1 | status=200 | duration=5.09s
+2026-03-21 20:39:49,081 | INFO | atlas.parser | extract_projects() found 25 projects on list page 1
+2026-03-21 20:39:58,095 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2
+2026-03-21 20:40:04,722 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2 | status=200 | duration=6.63s
+2026-03-21 20:40:04,786 | INFO | atlas.parser | extract_projects() found 25 projects on list page 2
+2026-03-21 20:40:18,793 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3
+2026-03-21 20:40:26,728 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3 | status=200 | duration=7.94s
+2026-03-21 20:40:26,812 | INFO | atlas.parser | extract_projects() found 25 projects on list page 3
+2026-03-21 20:40:42,817 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4
+2026-03-21 20:40:51,443 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4 | status=200 | duration=8.63s
+2026-03-21 20:40:51,641 | INFO | atlas.parser | extract_projects() found 25 projects on list page 4
+2026-03-21 20:40:59,651 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5
+2026-03-21 20:41:11,305 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5 | status=200 | duration=11.65s
+2026-03-21 20:41:11,454 | INFO | atlas.parser | extract_projects() found 25 projects on list page 5
+2026-03-21 20:41:30,463 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6
+2026-03-21 20:41:40,417 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6 | status=200 | duration=9.95s
+2026-03-21 20:41:40,483 | INFO | atlas.parser | extract_projects() found 25 projects on list page 6
+2026-03-21 20:41:47,492 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7
+2026-03-21 20:41:59,165 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7 | status=200 | duration=11.67s
+2026-03-21 20:41:59,236 | INFO | atlas.parser | extract_projects() found 25 projects on list page 7
+2026-03-21 20:42:09,237 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8
+2026-03-21 20:42:13,868 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8 | status=200 | duration=4.63s
+2026-03-21 20:42:13,931 | INFO | atlas.parser | extract_projects() found 25 projects on list page 8
+2026-03-21 20:42:28,943 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9
+2026-03-21 20:42:38,619 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9 | status=200 | duration=9.68s
+2026-03-21 20:42:38,679 | INFO | atlas.parser | extract_projects() found 25 projects on list page 9
+2026-03-21 20:42:46,685 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10
+2026-03-21 20:42:58,340 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10 | status=200 | duration=11.65s
+2026-03-21 20:42:58,415 | INFO | atlas.parser | extract_projects() found 25 projects on list page 10
+2026-03-21 20:43:04,423 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11
+2026-03-21 20:43:14,059 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11 | status=200 | duration=9.64s
+2026-03-21 20:43:14,139 | INFO | atlas.parser | extract_projects() found 25 projects on list page 11
+2026-03-21 20:43:19,146 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12
+2026-03-21 20:43:26,794 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12 | status=200 | duration=7.65s
+2026-03-21 20:43:26,879 | INFO | atlas.parser | extract_projects() found 25 projects on list page 12
+2026-03-21 20:43:40,889 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13
+2026-03-21 20:43:49,500 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13 | status=200 | duration=8.61s
+2026-03-21 20:43:49,569 | INFO | atlas.parser | extract_projects() found 15 projects on list page 13
+2026-03-21 20:43:56,573 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14
+2026-03-21 20:44:05,156 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14 | status=200 | duration=8.58s
+2026-03-21 20:44:05,194 | INFO | atlas.parser | extract_projects() found 0 projects on list page 14
+2026-03-21 20:44:10,200 | INFO | atlas.parser | Completed parsing. Total projects found: 340
+2026-03-21 20:44:10,206 | INFO | atlas.parser | Saved parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_list_atlas_projects_20260321T194410Z.json
+2026-03-21 20:50:31,176 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 20:50:31,178 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 20:50:38,350 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=7.17s
+2026-03-21 20:50:43,437 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 20:50:54,653 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=11.22s
+2026-03-21 20:51:08,737 | INFO | atlas.parser | Saved detailed parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_details_atlas_projects_20260321T195108Z.json
+2026-03-21 20:52:40,077 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 20:52:40,082 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 20:52:47,437 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=7.36s
+2026-03-21 20:53:00,531 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 20:53:11,648 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=11.12s
+2026-03-21 20:53:21,758 | INFO | atlas.parser | Saved detailed parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_list_atlas_projects_20260321T194410Z.json
+2026-03-21 20:55:05,532 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 20:55:05,534 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 20:55:17,083 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=11.55s
+2026-03-21 20:55:24,165 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 20:55:35,615 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=11.45s
+2026-03-21 20:55:39,708 | INFO | atlas.parser | Saved detailed parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_details_atlas_projects_20260321T195539Z.json
+2026-03-21 21:01:24,200 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 21:01:46,961 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 21:02:09,706 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 21:02:09,713 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 21:02:19,211 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=9.50s
+2026-03-21 21:02:23,304 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 21:02:35,012 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=11.71s
+2026-03-21 21:02:42,105 | INFO | atlas.parser | Saved detailed parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_details_atlas_projects_20260321T200242Z.json
+2026-03-21 21:09:29,499 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 21:09:29,510 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 21:09:41,217 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=11.71s
+2026-03-21 21:09:52,451 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 21:10:00,702 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=8.25s
+2026-03-21 21:10:04,930 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229997
+2026-03-21 21:10:05,314 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229997
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/eva-energy-virtual-assistance
+2026-03-21 21:10:05,341 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229997
+2026-03-21 21:10:05,343 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229995
+2026-03-21 21:10:05,529 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229995
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/porto-energy-hub
+2026-03-21 21:10:05,531 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229995
+2026-03-21 21:10:05,533 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229994
+2026-03-21 21:10:05,809 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229994
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/municipal-program-tackle-energy-poverty-braga-portugal
+2026-03-21 21:10:05,811 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229994
+2026-03-21 21:10:05,812 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229993
+2026-03-21 21:10:05,992 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229993
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229993
+2026-03-21 21:10:05,994 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229993
+2026-03-21 21:10:05,995 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229992
+2026-03-21 21:10:06,117 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229992
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229992
+2026-03-21 21:10:06,118 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229992
+2026-03-21 21:10:06,120 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229991
+2026-03-21 21:10:06,281 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229991
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/e-lar
+2026-03-21 21:10:06,283 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229991
+2026-03-21 21:10:06,285 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229889
+2026-03-21 21:10:06,379 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229889
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229889
+2026-03-21 21:10:06,381 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229889
+2026-03-21 21:10:06,384 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229876
+2026-03-21 21:10:06,628 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229876
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/transfair
+2026-03-21 21:10:06,630 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229876
+2026-03-21 21:10:06,633 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229874
+2026-03-21 21:10:06,813 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229874
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/ecrew
+2026-03-21 21:10:06,817 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229874
+2026-03-21 21:10:06,819 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229867
+2026-03-21 21:10:06,997 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229867
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/greta
+2026-03-21 21:10:06,999 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229867
+2026-03-21 21:10:07,001 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229866
+2026-03-21 21:10:07,144 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229866
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229866
+2026-03-21 21:10:07,146 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229866
+2026-03-21 21:10:07,149 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229865
+2026-03-21 21:10:07,319 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229865
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/ser-social-energy-renovations-0
+2026-03-21 21:10:07,322 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229865
+2026-03-21 21:10:07,324 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229863
+2026-03-21 21:10:07,526 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229863
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229863
+2026-03-21 21:10:07,528 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229863
+2026-03-21 21:10:07,530 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229862
+2026-03-21 21:10:07,721 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229862
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229862
+2026-03-21 21:10:07,723 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229862
+2026-03-21 21:10:07,725 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229861
+2026-03-21 21:10:08,121 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229861
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/life-aqp-opolskie
+2026-03-21 21:10:08,123 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229861
+2026-03-21 21:10:08,125 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229860
+2026-03-21 21:10:08,821 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229860
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229860
+2026-03-21 21:10:08,822 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229860
+2026-03-21 21:10:08,824 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229859
+2026-03-21 21:10:09,354 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229859
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/life-bio-balance
+2026-03-21 21:10:09,355 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229859
+2026-03-21 21:10:09,356 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229858
+2026-03-21 21:10:09,508 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229858
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229858
+2026-03-21 21:10:09,509 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229858
+2026-03-21 21:10:09,511 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229857
+2026-03-21 21:10:09,623 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229857
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229857
+2026-03-21 21:10:09,624 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229857
+2026-03-21 21:10:09,626 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229856
+2026-03-21 21:10:09,918 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229856
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/homereno-one-stop-shop
+2026-03-21 21:10:09,920 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229856
+2026-03-21 21:10:09,921 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229855
+2026-03-21 21:10:10,708 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229855
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229855
+2026-03-21 21:10:10,710 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229855
+2026-03-21 21:10:10,711 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229555
+2026-03-21 21:10:11,014 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229555
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229555
+2026-03-21 21:10:11,016 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229555
+2026-03-21 21:10:11,017 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229538
+2026-03-21 21:10:11,315 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229538
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/upcycling-trust
+2026-03-21 21:10:11,316 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229538
+2026-03-21 21:10:11,317 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229528
+2026-03-21 21:10:11,417 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229528
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229528
+2026-03-21 21:10:11,418 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229528
+2026-03-21 21:10:11,419 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229380
+2026-03-21 21:10:11,718 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229380
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229380
+2026-03-21 21:10:11,719 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229380
+2026-03-21 21:10:11,720 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229249
+2026-03-21 21:10:11,918 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/229249
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/229249
+2026-03-21 21:10:11,919 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/229249
+2026-03-21 21:10:11,920 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/223818
+2026-03-21 21:10:12,428 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/223818
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/include-just-and-inclusive-climate-action
+2026-03-21 21:10:12,430 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/223818
+2026-03-21 21:10:12,431 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219735
+2026-03-21 21:10:12,619 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219735
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219735
+2026-03-21 21:10:12,620 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219735
+2026-03-21 21:10:12,621 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219610
+2026-03-21 21:10:12,825 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219610
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219610
+2026-03-21 21:10:12,826 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219610
+2026-03-21 21:10:12,827 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219609
+2026-03-21 21:10:13,510 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219609
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219609
+2026-03-21 21:10:13,512 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219609
+2026-03-21 21:10:13,513 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219608
+2026-03-21 21:10:13,718 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219608
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/renopackecopack
+2026-03-21 21:10:13,720 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219608
+2026-03-21 21:10:13,721 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219606
+2026-03-21 21:10:14,019 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219606
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/proyecto-de-energias-renovables-en-mercados-rurales-renewable-energy
+2026-03-21 21:10:14,021 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219606
+2026-03-21 21:10:14,022 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219605
+2026-03-21 21:10:14,223 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219605
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219605
+2026-03-21 21:10:14,224 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219605
+2026-03-21 21:10:14,225 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219604
+2026-03-21 21:10:14,513 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219604
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219604
+2026-03-21 21:10:14,515 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219604
+2026-03-21 21:10:14,516 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219603
+2026-03-21 21:10:14,716 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219603
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/guichet-primes
+2026-03-21 21:10:14,717 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219603
+2026-03-21 21:10:14,718 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219602
+2026-03-21 21:10:14,823 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219602
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219602
+2026-03-21 21:10:14,824 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219602
+2026-03-21 21:10:14,825 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219601
+2026-03-21 21:10:15,023 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219601
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219601
+2026-03-21 21:10:15,025 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219601
+2026-03-21 21:10:15,027 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219600
+2026-03-21 21:10:15,517 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219600
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/xarxa-una-transicio-energetica-justa-xtej
+2026-03-21 21:10:15,518 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219600
+2026-03-21 21:10:15,519 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219599
+2026-03-21 21:10:15,719 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219599
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/wwbc-weatherizers-without-borders-campana
+2026-03-21 21:10:15,721 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219599
+2026-03-21 21:10:15,721 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219598
+2026-03-21 21:10:16,120 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219598
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/winterization-sustainable-winterization-solutions-most-vulnerable
+2026-03-21 21:10:16,122 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219598
+2026-03-21 21:10:16,124 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219597
+2026-03-21 21:10:16,413 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219597
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219597
+2026-03-21 21:10:16,415 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219597
+2026-03-21 21:10:16,416 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219596
+2026-03-21 21:10:16,520 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219596
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219596
+2026-03-21 21:10:16,521 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219596
+2026-03-21 21:10:16,523 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219595
+2026-03-21 21:10:16,910 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219595
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219595
+2026-03-21 21:10:16,912 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219595
+2026-03-21 21:10:16,913 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219594
+2026-03-21 21:10:17,257 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219594
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219594
+2026-03-21 21:10:17,259 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219594
+2026-03-21 21:10:17,260 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219593
+2026-03-21 21:10:17,430 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219593
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/warmer-kiwi-homes
+2026-03-21 21:10:17,431 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219593
+2026-03-21 21:10:17,433 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219592
+2026-03-21 21:10:17,534 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219592
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219592
+2026-03-21 21:10:17,536 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219592
+2026-03-21 21:10:17,537 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219591
+2026-03-21 21:10:17,613 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219591
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219591
+2026-03-21 21:10:17,615 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219591
+2026-03-21 21:10:17,616 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219590
+2026-03-21 21:10:17,809 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219590
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/sh-sustentabilizar-hogares
+2026-03-21 21:10:17,811 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219590
+2026-03-21 21:10:17,813 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219589
+2026-03-21 21:10:17,905 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219589
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219589
+2026-03-21 21:10:17,907 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219589
+2026-03-21 21:10:17,909 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219588
+2026-03-21 21:10:17,997 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219588
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219588
+2026-03-21 21:10:17,998 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219588
+2026-03-21 21:10:18,000 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219587
+2026-03-21 21:10:18,078 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219587
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219587
+2026-03-21 21:10:18,080 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219587
+2026-03-21 21:10:18,081 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219586
+2026-03-21 21:10:18,161 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219586
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219586
+2026-03-21 21:10:18,162 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219586
+2026-03-21 21:10:18,163 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219585
+2026-03-21 21:10:18,324 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219585
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/rhodoshop
+2026-03-21 21:10:18,326 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219585
+2026-03-21 21:10:18,327 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219584
+2026-03-21 21:10:18,408 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219584
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219584
+2026-03-21 21:10:18,410 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219584
+2026-03-21 21:10:18,411 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219583
+2026-03-21 21:10:18,565 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219583
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/residential-energy-efficiency-low-income-households-reelih
+2026-03-21 21:10:18,566 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219583
+2026-03-21 21:10:18,567 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219582
+2026-03-21 21:10:18,664 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219582
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219582
+2026-03-21 21:10:18,665 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219582
+2026-03-21 21:10:18,667 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219581
+2026-03-21 21:10:18,838 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219581
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/renben-renovatie-tot-een-bjina-energie-neturale-woning
+2026-03-21 21:10:18,844 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219581
+2026-03-21 21:10:18,848 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219580
+2026-03-21 21:10:19,070 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219580
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/reech-renewables-and-energy-efficiency-community-housing
+2026-03-21 21:10:19,072 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219580
+2026-03-21 21:10:19,074 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219579
+2026-03-21 21:10:19,209 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219579
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219579
+2026-03-21 21:10:19,214 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219579
+2026-03-21 21:10:19,215 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219578
+2026-03-21 21:10:19,354 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219578
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219578
+2026-03-21 21:10:19,356 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219578
+2026-03-21 21:10:19,358 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219577
+2026-03-21 21:10:19,449 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219577
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219577
+2026-03-21 21:10:19,451 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219577
+2026-03-21 21:10:19,453 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219576
+2026-03-21 21:10:19,683 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219576
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/pop-energy-desks
+2026-03-21 21:10:19,686 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219576
+2026-03-21 21:10:19,688 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219575
+2026-03-21 21:10:19,908 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219575
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/mejoramiento-de-la-eficiencia-termica-residencial-en-dalcahue
+2026-03-21 21:10:19,910 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219575
+2026-03-21 21:10:19,912 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219574
+2026-03-21 21:10:20,000 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219574
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219574
+2026-03-21 21:10:20,002 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219574
+2026-03-21 21:10:20,003 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219573
+2026-03-21 21:10:20,097 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219573
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219573
+2026-03-21 21:10:20,098 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219573
+2026-03-21 21:10:20,100 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219572
+2026-03-21 21:10:20,207 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219572
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219572
+2026-03-21 21:10:20,209 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219572
+2026-03-21 21:10:20,210 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219571
+2026-03-21 21:10:20,391 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219571
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/fondo-solidario-fsre-solidarity-fund-energy-retrofit-fondo-solidario
+2026-03-21 21:10:20,393 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219571
+2026-03-21 21:10:20,394 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219570
+2026-03-21 21:10:20,520 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219570
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219570
+2026-03-21 21:10:20,521 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219570
+2026-03-21 21:10:20,522 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219569
+2026-03-21 21:10:20,757 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219569
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/finnish-energy-observatory-feno
+2026-03-21 21:10:20,759 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219569
+2026-03-21 21:10:20,760 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219568
+2026-03-21 21:10:20,873 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219568
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219568
+2026-03-21 21:10:20,875 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219568
+2026-03-21 21:10:20,876 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219567
+2026-03-21 21:10:21,016 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219567
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219567
+2026-03-21 21:10:21,019 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219567
+2026-03-21 21:10:21,020 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219566
+2026-03-21 21:10:21,227 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219566
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/climate-active-neighbourhoods-face-face-energy-visits
+2026-03-21 21:10:21,229 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219566
+2026-03-21 21:10:21,231 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219565
+2026-03-21 21:10:21,392 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219565
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/europa-energy-efficiency-subscription-deep-renovation-performance
+2026-03-21 21:10:21,393 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219565
+2026-03-21 21:10:21,395 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219564
+2026-03-21 21:10:21,524 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219564
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219564
+2026-03-21 21:10:21,526 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219564
+2026-03-21 21:10:21,528 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219563
+2026-03-21 21:10:21,655 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219563
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219563
+2026-03-21 21:10:21,657 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219563
+2026-03-21 21:10:21,657 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219562
+2026-03-21 21:10:21,743 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219562
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219562
+2026-03-21 21:10:21,747 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219562
+2026-03-21 21:10:21,750 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219561
+2026-03-21 21:10:21,914 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219561
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/zamosc-epah-technical-assistance
+2026-03-21 21:10:21,916 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219561
+2026-03-21 21:10:21,918 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219560
+2026-03-21 21:10:22,040 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219560
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219560
+2026-03-21 21:10:22,041 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219560
+2026-03-21 21:10:22,043 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219559
+2026-03-21 21:10:22,141 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219559
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219559
+2026-03-21 21:10:22,143 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219559
+2026-03-21 21:10:22,145 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219558
+2026-03-21 21:10:22,497 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219558
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/tulcea-epah-technical-assistance
+2026-03-21 21:10:22,498 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219558
+2026-03-21 21:10:22,499 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219557
+2026-03-21 21:10:22,592 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219557
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219557
+2026-03-21 21:10:22,594 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219557
+2026-03-21 21:10:22,597 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219556
+2026-03-21 21:10:22,762 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219556
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/south-dublin-epah-technical-assistance
+2026-03-21 21:10:22,764 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219556
+2026-03-21 21:10:22,766 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219555
+2026-03-21 21:10:22,853 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219555
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219555
+2026-03-21 21:10:22,855 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219555
+2026-03-21 21:10:22,856 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219554
+2026-03-21 21:10:22,986 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219554
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219554
+2026-03-21 21:10:22,987 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219554
+2026-03-21 21:10:22,989 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219553
+2026-03-21 21:10:23,169 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219553
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/pamplona-epah-technical-assistance
+2026-03-21 21:10:23,172 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219553
+2026-03-21 21:10:23,173 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219552
+2026-03-21 21:10:23,271 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219552
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219552
+2026-03-21 21:10:23,273 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219552
+2026-03-21 21:10:23,274 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219551
+2026-03-21 21:10:23,371 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219551
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219551
+2026-03-21 21:10:23,373 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219551
+2026-03-21 21:10:23,374 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219550
+2026-03-21 21:10:23,584 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219550
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/murcia-epah-technical-assistance
+2026-03-21 21:10:23,585 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219550
+2026-03-21 21:10:23,587 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219549
+2026-03-21 21:10:23,675 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219549
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219549
+2026-03-21 21:10:23,676 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219549
+2026-03-21 21:10:23,679 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219548
+2026-03-21 21:10:23,864 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219548
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/modena-epah-technical-assistance
+2026-03-21 21:10:23,865 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219548
+2026-03-21 21:10:23,866 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219547
+2026-03-21 21:10:23,951 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219547
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219547
+2026-03-21 21:10:23,953 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219547
+2026-03-21 21:10:23,954 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219546
+2026-03-21 21:10:24,038 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219546
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219546
+2026-03-21 21:10:24,039 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219546
+2026-03-21 21:10:24,040 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219545
+2026-03-21 21:10:24,164 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219545
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219545
+2026-03-21 21:10:24,165 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219545
+2026-03-21 21:10:24,166 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219544
+2026-03-21 21:10:24,376 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219544
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/matraterenye-epah-technical-assistance-scheme
+2026-03-21 21:10:24,379 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219544
+2026-03-21 21:10:24,380 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219543
+2026-03-21 21:10:24,515 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219543
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219543
+2026-03-21 21:10:24,517 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219543
+2026-03-21 21:10:24,518 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219542
+2026-03-21 21:10:24,610 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219542
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219542
+2026-03-21 21:10:24,611 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219542
+2026-03-21 21:10:24,613 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219541
+2026-03-21 21:10:24,770 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219541
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/lorca-epah-technical-assistance
+2026-03-21 21:10:24,772 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219541
+2026-03-21 21:10:24,773 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219540
+2026-03-21 21:10:24,922 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219540
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219540
+2026-03-21 21:10:24,923 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219540
+2026-03-21 21:10:24,924 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219539
+2026-03-21 21:10:26,217 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219539
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/les-garrigues-region-epah-technical-assistance
+2026-03-21 21:10:26,218 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219539
+2026-03-21 21:10:26,219 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219538
+2026-03-21 21:10:26,521 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219538
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219538
+2026-03-21 21:10:26,522 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219538
+2026-03-21 21:10:26,523 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219537
+2026-03-21 21:10:26,923 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219537
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219537
+2026-03-21 21:10:26,924 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219537
+2026-03-21 21:10:26,926 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219536
+2026-03-21 21:10:27,217 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219536
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/jozsefvaros-epah-technical-assistance
+2026-03-21 21:10:27,219 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219536
+2026-03-21 21:10:27,219 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219535
+2026-03-21 21:10:27,521 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219535
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/ishoj-epah-technical-assistance
+2026-03-21 21:10:27,522 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219535
+2026-03-21 21:10:27,523 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219534
+2026-03-21 21:10:27,727 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219534
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219534
+2026-03-21 21:10:27,729 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219534
+2026-03-21 21:10:27,730 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219533
+2026-03-21 21:10:28,209 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219533
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/eordaia-and-grevena-epah-technical-assistance
+2026-03-21 21:10:28,211 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219533
+2026-03-21 21:10:28,213 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219532
+2026-03-21 21:10:28,326 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219532
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219532
+2026-03-21 21:10:28,328 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219532
+2026-03-21 21:10:28,329 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219531
+2026-03-21 21:10:28,526 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219531
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219531
+2026-03-21 21:10:28,527 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219531
+2026-03-21 21:10:28,529 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219530
+2026-03-21 21:10:28,723 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219530
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219530
+2026-03-21 21:10:28,725 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219530
+2026-03-21 21:10:28,726 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219529
+2026-03-21 21:10:28,917 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219529
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219529
+2026-03-21 21:10:28,919 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219529
+2026-03-21 21:10:28,919 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219528
+2026-03-21 21:10:29,219 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219528
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/eurometropole-strasbourg-epah-technical-assistance
+2026-03-21 21:10:29,220 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219528
+2026-03-21 21:10:29,221 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219527
+2026-03-21 21:10:29,418 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219527
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219527
+2026-03-21 21:10:29,420 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219527
+2026-03-21 21:10:29,421 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219526
+2026-03-21 21:10:29,724 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219526
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219526
+2026-03-21 21:10:29,726 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219526
+2026-03-21 21:10:29,728 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219525
+2026-03-21 21:10:30,714 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219525
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219525
+2026-03-21 21:10:30,715 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219525
+2026-03-21 21:10:30,716 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219524
+2026-03-21 21:10:30,823 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219524
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219524
+2026-03-21 21:10:30,825 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219524
+2026-03-21 21:10:30,827 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219523
+2026-03-21 21:10:31,123 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219523
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219523
+2026-03-21 21:10:31,125 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219523
+2026-03-21 21:10:31,126 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219522
+2026-03-21 21:10:32,311 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219522
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/bukkszentkereszt-epah-technical-assistance
+2026-03-21 21:10:32,312 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219522
+2026-03-21 21:10:32,314 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219521
+2026-03-21 21:10:32,418 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219521
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219521
+2026-03-21 21:10:32,420 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219521
+2026-03-21 21:10:32,422 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219520
+2026-03-21 21:10:32,629 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219520
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219520
+2026-03-21 21:10:32,630 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219520
+2026-03-21 21:10:32,631 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219519
+2026-03-21 21:10:32,927 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219519
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/baixa-da-banheira-vale-da-amoreira-epah-technical-assistance-scheme
+2026-03-21 21:10:32,928 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219519
+2026-03-21 21:10:32,929 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219513
+2026-03-21 21:10:33,413 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219513
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/baix-emporda-epah-technical-assistance
+2026-03-21 21:10:33,416 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219513
+2026-03-21 21:10:33,417 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219512
+2026-03-21 21:10:33,626 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219512
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219512
+2026-03-21 21:10:33,628 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219512
+2026-03-21 21:10:33,629 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219510
+2026-03-21 21:10:33,818 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219510
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219510
+2026-03-21 21:10:33,820 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219510
+2026-03-21 21:10:33,821 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219509
+2026-03-21 21:10:35,014 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219509
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219509
+2026-03-21 21:10:35,016 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219509
+2026-03-21 21:10:35,017 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219508
+2026-03-21 21:10:35,421 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219508
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/alba-iulia-epah-technical-assistance
+2026-03-21 21:10:35,422 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219508
+2026-03-21 21:10:35,423 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219471
+2026-03-21 21:10:35,721 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219471
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219471
+2026-03-21 21:10:35,723 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219471
+2026-03-21 21:10:35,724 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219442
+2026-03-21 21:10:35,917 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219442
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219442
+2026-03-21 21:10:35,918 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219442
+2026-03-21 21:10:35,919 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219432
+2026-03-21 21:10:36,219 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219432
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/entrack-empowering-local-and-regional-authorities-design-clean-energy
+2026-03-21 21:10:36,220 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219432
+2026-03-21 21:10:36,222 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219423
+2026-03-21 21:10:36,419 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/219423
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/219423
+2026-03-21 21:10:36,421 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/219423
+2026-03-21 21:10:36,422 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217252
+2026-03-21 21:10:36,721 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217252
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/green-loan-brussels-pret-vert-bruxellois
+2026-03-21 21:10:36,723 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217252
+2026-03-21 21:10:36,725 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217232
+2026-03-21 21:10:36,890 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217232
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217232
+2026-03-21 21:10:36,892 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217232
+2026-03-21 21:10:36,894 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217250
+2026-03-21 21:10:37,110 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217250
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/punt-assessorament-energetic-igualada
+2026-03-21 21:10:37,113 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217250
+2026-03-21 21:10:37,114 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217249
+2026-03-21 21:10:37,219 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217249
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217249
+2026-03-21 21:10:37,220 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217249
+2026-03-21 21:10:37,221 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217248
+2026-03-21 21:10:37,309 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217248
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217248
+2026-03-21 21:10:37,311 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217248
+2026-03-21 21:10:37,312 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217247
+2026-03-21 21:10:37,533 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217247
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/benefit-payment-vulnerable-energy-buyer-naknada-za-ugrozenog-kupca
+2026-03-21 21:10:37,534 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217247
+2026-03-21 21:10:37,536 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217246
+2026-03-21 21:10:37,715 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217246
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/energy-efficiency-buildings-attica-prefecture
+2026-03-21 21:10:37,717 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217246
+2026-03-21 21:10:37,718 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217245
+2026-03-21 21:10:37,816 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217245
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217245
+2026-03-21 21:10:37,818 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217245
+2026-03-21 21:10:37,819 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217244
+2026-03-21 21:10:37,912 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217244
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217244
+2026-03-21 21:10:37,914 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217244
+2026-03-21 21:10:37,916 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217243
+2026-03-21 21:10:38,019 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217243
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217243
+2026-03-21 21:10:38,022 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217243
+2026-03-21 21:10:38,023 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217236
+2026-03-21 21:10:38,226 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217236
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/pacte-15-territorial-strategy-reduce-energy-poverty
+2026-03-21 21:10:38,227 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217236
+2026-03-21 21:10:38,228 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217230
+2026-03-21 21:10:38,355 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217230
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217230
+2026-03-21 21:10:38,356 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217230
+2026-03-21 21:10:38,358 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217233
+2026-03-21 21:10:38,448 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217233
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217233
+2026-03-21 21:10:38,449 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217233
+2026-03-21 21:10:38,450 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217234
+2026-03-21 21:10:38,534 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217234
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217234
+2026-03-21 21:10:38,535 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217234
+2026-03-21 21:10:38,536 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217235
+2026-03-21 21:10:38,679 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217235
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217235
+2026-03-21 21:10:38,680 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217235
+2026-03-21 21:10:38,681 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217239
+2026-03-21 21:10:39,029 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217239
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/affordable-warmth-service
+2026-03-21 21:10:39,031 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217239
+2026-03-21 21:10:39,032 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217241
+2026-03-21 21:10:39,212 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217241
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217241
+2026-03-21 21:10:39,213 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217241
+2026-03-21 21:10:39,215 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217240
+2026-03-21 21:10:39,761 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217240
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217240
+2026-03-21 21:10:39,763 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217240
+2026-03-21 21:10:39,766 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217242
+2026-03-21 21:10:39,964 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217242
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/energierevolte-pre-paid-metering-app
+2026-03-21 21:10:39,968 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217242
+2026-03-21 21:10:39,969 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217237
+2026-03-21 21:10:40,075 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217237
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217237
+2026-03-21 21:10:40,077 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217237
+2026-03-21 21:10:40,078 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217232
+2026-03-21 21:10:40,256 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217232
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217232
+2026-03-21 21:10:40,258 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217232
+2026-03-21 21:10:40,259 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217233
+2026-03-21 21:10:40,423 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217233
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217233
+2026-03-21 21:10:40,425 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217233
+2026-03-21 21:10:40,427 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217234
+2026-03-21 21:10:40,508 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217234
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217234
+2026-03-21 21:10:40,509 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217234
+2026-03-21 21:10:40,510 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217235
+2026-03-21 21:10:40,618 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217235
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217235
+2026-03-21 21:10:40,619 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217235
+2026-03-21 21:10:40,620 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217236
+2026-03-21 21:10:40,795 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217236
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/pacte-15-territorial-strategy-reduce-energy-poverty
+2026-03-21 21:10:40,797 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217236
+2026-03-21 21:10:40,799 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217237
+2026-03-21 21:10:41,196 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217237
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217237
+2026-03-21 21:10:41,198 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217237
+2026-03-21 21:10:41,199 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217239
+2026-03-21 21:10:41,324 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217239
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas/affordable-warmth-service
+2026-03-21 21:10:41,326 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217239
+2026-03-21 21:10:41,327 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217240
+2026-03-21 21:10:41,417 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217240
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217240
+2026-03-21 21:10:41,419 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217240
+2026-03-21 21:10:41,420 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217241
+2026-03-21 21:10:41,508 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/node/217241
+Traceback (most recent call last):
+  File "<ipython-input-3-1f1e33c10a52>", line 75, in fetch_page_response
+    response.raise_for_status()
+  File "d:\Programs\miniconda3\envs\spacer-hb\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://energy-poverty.ec.europa.eu/node/217241
+2026-03-21 21:10:41,510 | ERROR | atlas.parser | Skipping project link due to fetch failure: https://energy-poverty.ec.europa.eu/node/217241
+2026-03-21 21:10:41,511 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217242
+2026-03-21 21:14:24,753 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 21:15:56,111 | INFO | atlas.parser | PROJECT_ROOT: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard
+2026-03-21 21:15:56,120 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-21 21:16:01,538 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=5.42s
+2026-03-21 21:16:06,769 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-21 21:16:16,200 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=9.43s
+2026-03-21 21:16:22,429 | INFO | atlas.parser | Saved detailed parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-dashboard\data\raw\epah_details_atlas_projects_20260321T201622Z.json
+2026-03-22 09:58:43,798 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0 | status=200 | duration=5.79s
+2026-03-22 09:58:43,858 | INFO | atlas.parser | extract_projects() found 25 projects on list page 0
+2026-03-22 09:59:00,861 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1
+2026-03-22 09:59:10,528 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1 | status=200 | duration=9.67s
+2026-03-22 09:59:10,593 | INFO | atlas.parser | extract_projects() found 25 projects on list page 1
+2026-03-22 09:59:15,602 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2
+2026-03-22 09:59:26,262 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2 | status=200 | duration=10.66s
+2026-03-22 09:59:26,322 | INFO | atlas.parser | extract_projects() found 25 projects on list page 2
+2026-03-22 09:59:45,337 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3
+2026-03-22 09:59:55,959 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3 | status=200 | duration=10.62s
+2026-03-22 09:59:56,020 | INFO | atlas.parser | extract_projects() found 25 projects on list page 3
+2026-03-22 10:00:13,032 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4
+2026-03-22 10:00:19,732 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4 | status=200 | duration=6.70s
+2026-03-22 10:00:19,837 | INFO | atlas.parser | extract_projects() found 25 projects on list page 4
+2026-03-22 10:00:25,851 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5
+2026-03-22 10:00:34,530 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5 | status=200 | duration=8.68s
+2026-03-22 10:00:34,645 | INFO | atlas.parser | extract_projects() found 25 projects on list page 5
+2026-03-22 10:00:43,647 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6
+2026-03-22 10:00:51,268 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6 | status=200 | duration=7.62s
+2026-03-22 10:00:51,337 | INFO | atlas.parser | extract_projects() found 25 projects on list page 6
+2026-03-22 10:01:12,341 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7
+2026-03-22 10:01:19,042 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7 | status=200 | duration=6.70s
+2026-03-22 10:01:19,106 | INFO | atlas.parser | extract_projects() found 25 projects on list page 7
+2026-03-22 10:01:30,117 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8
+2026-03-22 10:01:36,780 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8 | status=200 | duration=6.66s
+2026-03-22 10:01:36,855 | INFO | atlas.parser | extract_projects() found 25 projects on list page 8
+2026-03-22 10:01:54,866 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9
+2026-03-22 10:02:00,475 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9 | status=200 | duration=5.61s
+2026-03-22 10:02:00,533 | INFO | atlas.parser | extract_projects() found 25 projects on list page 9
+2026-03-22 10:02:12,536 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10
+2026-03-22 10:02:25,219 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10 | status=200 | duration=12.68s
+2026-03-22 10:02:25,274 | INFO | atlas.parser | extract_projects() found 25 projects on list page 10
+2026-03-22 10:02:35,281 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11
+2026-03-22 10:02:47,252 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11 | status=200 | duration=11.97s
+2026-03-22 10:02:47,312 | INFO | atlas.parser | extract_projects() found 25 projects on list page 11
+2026-03-22 10:02:59,320 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12
+2026-03-22 10:03:09,725 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12 | status=200 | duration=10.40s
+2026-03-22 10:03:09,794 | INFO | atlas.parser | extract_projects() found 25 projects on list page 12
+2026-03-22 10:03:21,810 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13
+2026-03-22 10:03:32,288 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13 | status=200 | duration=10.48s
+2026-03-22 10:03:32,342 | INFO | atlas.parser | extract_projects() found 15 projects on list page 13
+2026-03-22 10:03:52,348 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14
+2026-03-22 10:04:04,435 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14 | status=200 | duration=12.09s
+2026-03-22 10:04:04,573 | INFO | atlas.parser | extract_projects() found 0 projects on list page 14
+2026-03-22 10:04:23,576 | INFO | atlas.parser | Completed parsing. Total projects found: 340
+2026-03-22 10:04:23,582 | INFO | atlas.parser | Saved parsed projects to: C:\Users\Oleksandr-MSI\Documentos\data\raw\epah_list_atlas_projects_20260322T090423Z.json
+2026-03-22 13:29:23,651 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+2026-03-22 13:29:23,812 | ERROR | atlas.parser | Failed to fetch URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+Traceback (most recent call last):
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connection.py", line 204, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+PermissionError: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connection.py", line 759, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connection.py", line 219, in _new_conn
+    raise NewConnectionError(
+        self, f"Failed to establish a new connection: {e}"
+    ) from e
+urllib3.exceptions.NewConnectionError: HTTPSConnection(host='energy-poverty.ec.europa.eu', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\urllib3\util\retry.py", line 535, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='energy-poverty.ec.europa.eu', port=443): Max retries exceeded with url: /discover-community/epah-atlas (Caused by NewConnectionError("HTTPSConnection(host='energy-poverty.ec.europa.eu', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\parser.py", line 76, in fetch_page_response
+    response = active_session.get(url, timeout=timeout)
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\.venv\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='energy-poverty.ec.europa.eu', port=443): Max retries exceeded with url: /discover-community/epah-atlas (Caused by NewConnectionError("HTTPSConnection(host='energy-poverty.ec.europa.eu', port=443): Failed to establish a new connection: [WinError 10013] An attempt was made to access a socket in a way forbidden by its access permissions"))
+2026-03-22 13:29:23,828 | ERROR | atlas.parser | Failed to fetch the first page. Aborting stage 1.
+2026-03-22 13:42:20,082 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+2026-03-22 13:42:31,057 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas | status=200 | duration=10.98s
+2026-03-22 13:42:31,114 | INFO | atlas.parser | extract_last_page_number() detected last page number 14 at 2026-03-22T13:42:31
+2026-03-22 13:42:31,115 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0
+2026-03-22 13:42:38,076 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0 | status=200 | duration=6.96s
+2026-03-22 13:42:38,138 | INFO | atlas.parser | extract_projects() found 25 projects on list page 0
+2026-03-22 13:42:54,146 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1
+2026-03-22 13:42:59,938 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1 | status=200 | duration=5.79s
+2026-03-22 13:43:00,008 | INFO | atlas.parser | extract_projects() found 25 projects on list page 1
+2026-03-22 13:43:22,010 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2
+2026-03-22 13:43:33,773 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2 | status=200 | duration=11.76s
+2026-03-22 13:43:33,866 | INFO | atlas.parser | extract_projects() found 25 projects on list page 2
+2026-03-22 13:43:37,867 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3
+2026-03-22 13:43:48,583 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3 | status=200 | duration=10.72s
+2026-03-22 13:43:48,650 | INFO | atlas.parser | extract_projects() found 25 projects on list page 3
+2026-03-22 13:44:00,651 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4
+2026-03-22 13:44:06,320 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4 | status=200 | duration=5.67s
+2026-03-22 13:44:06,398 | INFO | atlas.parser | extract_projects() found 25 projects on list page 4
+2026-03-22 13:44:13,399 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5
+2026-03-22 13:44:20,067 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5 | status=200 | duration=6.67s
+2026-03-22 13:44:20,134 | INFO | atlas.parser | extract_projects() found 25 projects on list page 5
+2026-03-22 13:44:41,136 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6
+2026-03-22 13:44:45,876 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6 | status=200 | duration=4.74s
+2026-03-22 13:44:45,962 | INFO | atlas.parser | extract_projects() found 25 projects on list page 6
+2026-03-22 13:45:00,962 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7
+2026-03-22 13:45:05,703 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7 | status=200 | duration=4.74s
+2026-03-22 13:45:05,769 | INFO | atlas.parser | extract_projects() found 25 projects on list page 7
+2026-03-22 13:45:18,769 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8
+2026-03-22 13:45:23,449 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8 | status=200 | duration=4.68s
+2026-03-22 13:45:23,515 | INFO | atlas.parser | extract_projects() found 25 projects on list page 8
+2026-03-22 13:45:45,516 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9
+2026-03-22 13:45:53,296 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9 | status=200 | duration=7.78s
+2026-03-22 13:45:53,381 | INFO | atlas.parser | extract_projects() found 25 projects on list page 9
+2026-03-22 13:46:10,382 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10
+2026-03-22 13:46:21,061 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10 | status=200 | duration=10.68s
+2026-03-22 13:46:21,288 | INFO | atlas.parser | extract_projects() found 25 projects on list page 10
+2026-03-22 13:46:40,353 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11
+2026-03-22 13:46:51,078 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11 | status=200 | duration=10.73s
+2026-03-22 13:46:51,166 | INFO | atlas.parser | extract_projects() found 25 projects on list page 11
+2026-03-22 13:47:03,167 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12
+2026-03-22 13:47:14,795 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12 | status=200 | duration=11.63s
+2026-03-22 13:47:15,053 | INFO | atlas.parser | extract_projects() found 25 projects on list page 12
+2026-03-22 13:47:21,054 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13
+2026-03-22 13:47:30,677 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13 | status=200 | duration=9.62s
+2026-03-22 13:47:30,769 | INFO | atlas.parser | extract_projects() found 15 projects on list page 13
+2026-03-22 13:47:41,770 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14
+2026-03-22 13:47:53,442 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14 | status=200 | duration=11.67s
+2026-03-22 13:47:53,479 | INFO | atlas.parser | extract_projects() found 0 projects on list page 14
+2026-03-22 13:48:08,480 | INFO | atlas.parser | Completed parsing. Total projects found: 340
+2026-03-22 13:48:08,486 | INFO | atlas.parser | Saved parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\data\raw\epah_list_atlas_projects_20260322T124808Z.json
+2026-03-22 13:48:08,548 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-03-22 13:48:16,217 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=7.67s
+2026-03-22 13:48:25,348 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-03-22 13:48:32,007 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=6.66s
+2026-03-22 13:48:45,112 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229997
+2026-03-22 13:48:56,618 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229997 | status=200 | duration=11.51s
+2026-03-22 13:49:09,929 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229995
+2026-03-22 13:49:20,534 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229995 | status=200 | duration=10.60s
+2026-03-22 13:49:27,645 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229994
+2026-03-22 13:49:40,149 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229994 | status=200 | duration=12.50s
+2026-03-22 13:49:44,266 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229993
+2026-03-22 13:49:51,903 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229993 | status=200 | duration=7.64s
+2026-03-22 13:50:01,027 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229992
+2026-03-22 13:50:13,432 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229992 | status=200 | duration=12.40s
+2026-03-22 13:50:27,562 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229991
+2026-03-22 13:50:33,132 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229991 | status=200 | duration=5.57s
+2026-03-22 13:50:46,274 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229889
+2026-03-22 13:50:55,815 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229889 | status=200 | duration=9.54s
+2026-03-22 13:51:10,925 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229876
+2026-03-22 13:51:15,344 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229876 | status=200 | duration=4.42s
+2026-03-22 13:51:27,483 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229874
+2026-03-22 13:51:37,022 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229874 | status=200 | duration=9.54s
+2026-03-22 13:51:41,176 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229867
+2026-03-22 13:51:47,793 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229867 | status=200 | duration=6.62s
+2026-03-22 13:51:59,907 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229866
+2026-03-22 13:52:04,465 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229866 | status=200 | duration=4.56s
+2026-03-22 13:52:12,580 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229865
+2026-03-22 13:52:17,071 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229865 | status=200 | duration=4.49s
+2026-03-22 13:52:22,190 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229863
