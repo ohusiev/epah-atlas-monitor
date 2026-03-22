@@ -29,6 +29,24 @@ CREATE TABLE IF NOT EXISTS project_index (
     needs_stage2          INTEGER NOT NULL DEFAULT 1   -- 1 = pending, 0 = done
 );
 
+CREATE TABLE IF NOT EXISTS project_details (
+    atlas_id                TEXT PRIMARY KEY
+                            REFERENCES project_index(atlas_id) ON DELETE CASCADE,
+    project_title           TEXT,
+    project_scope           TEXT,
+    project_body            TEXT,
+    countries_impacted      TEXT,
+    geographical_scale      TEXT,
+    energy_poverty_phase    TEXT,
+    intervention_type       TEXT,
+    professionals_involved  TEXT,
+    partners_involved       TEXT,
+    type_of_funding         TEXT,
+    website                 TEXT,
+    parsed_at               TEXT,
+    updated_at              TEXT NOT NULL
+);
+
 CREATE TABLE IF NOT EXISTS pipeline_runs (
     run_id      TEXT PRIMARY KEY,
     stage       INTEGER NOT NULL,   -- 1 or 2
@@ -72,9 +90,9 @@ def validate_db(db_path: Path) -> bool:
     with _connect(db_path) as conn:
         rows = conn.execute(
             "SELECT name FROM sqlite_master WHERE type='table' AND name IN "
-            "('project_index','pipeline_runs');"
+            "('project_index','project_details','pipeline_runs');"
         ).fetchall()
-    return len(rows) == 2
+    return len(rows) == 3
 
 
 # ── project_index ──────────────────────────────────────────────────────────────
@@ -184,6 +202,86 @@ def mark_stage2_failed(db_path: Path, atlas_id: str) -> None:
         )
 
 
+# ── project_details ───────────────────────────────────────────────────────────
+
+_DETAIL_FIELDS = (
+    "project_title", "project_scope", "project_body",
+    "countries_impacted", "geographical_scale", "energy_poverty_phase",
+    "intervention_type", "professionals_involved", "partners_involved",
+    "type_of_funding", "website", "parsed_at",
+)
+
+
+def upsert_project_details(db_path: Path, details: list[dict[str, Any]]) -> dict[str, int]:
+    """
+    Upsert Stage-2 parsed detail records into project_details.
+
+    Requires atlas_id to be present on each record. Records without a
+    matching atlas_id in project_index are skipped with a warning.
+    Returns counts: {"inserted": N, "updated": N}.
+    """
+    now = _now()
+    inserted = updated = 0
+
+    with _connect(db_path) as conn:
+        for d in details:
+            atlas_id = str(d.get("atlas_id") or "")
+            if not atlas_id:
+                continue
+
+            # Guard: only insert if the parent row exists
+            parent = conn.execute(
+                "SELECT atlas_id FROM project_index WHERE atlas_id = ?",
+                (atlas_id,),
+            ).fetchone()
+            if not parent:
+                continue
+
+            existing = conn.execute(
+                "SELECT atlas_id FROM project_details WHERE atlas_id = ?",
+                (atlas_id,),
+            ).fetchone()
+
+            row = {f: d.get(f) for f in _DETAIL_FIELDS}
+            row["updated_at"] = now
+
+            if existing:
+                set_clause = ", ".join(f"{f} = ?" for f in row)
+                conn.execute(
+                    f"UPDATE project_details SET {set_clause} WHERE atlas_id = ?",
+                    (*row.values(), atlas_id),
+                )
+                updated += 1
+            else:
+                fields = ("atlas_id", *row.keys())
+                placeholders = ", ".join("?" * len(fields))
+                conn.execute(
+                    f"INSERT INTO project_details ({', '.join(fields)}) VALUES ({placeholders})",
+                    (atlas_id, *row.values()),
+                )
+                inserted += 1
+
+    return {"inserted": inserted, "updated": updated}
+
+
+def get_all_project_details(db_path: Path) -> list[dict[str, Any]]:
+    """Return a joined view of project_index + project_details for all projects."""
+    with _connect(db_path) as conn:
+        rows = conn.execute(
+            """SELECT i.atlas_id, i.project_url, i.project_name,
+                      i.first_seen_at, i.last_seen_at, i.last_stage2_parsed_at,
+                      d.project_title, d.project_scope, d.project_body,
+                      d.countries_impacted, d.geographical_scale,
+                      d.energy_poverty_phase, d.intervention_type,
+                      d.professionals_involved, d.partners_involved,
+                      d.type_of_funding, d.website, d.parsed_at
+               FROM project_index i
+               LEFT JOIN project_details d USING (atlas_id)
+               ORDER BY i.first_seen_at DESC"""
+        ).fetchall()
+    return [dict(r) for r in rows]
+
+
 # ── pipeline_runs ──────────────────────────────────────────────────────────────
 
 def start_run(db_path: Path, stage: int) -> str:
@@ -217,6 +315,59 @@ def get_latest_successful_run(db_path: Path, stage: int) -> dict[str, Any] | Non
             (stage,),
         ).fetchone()
     return dict(row) if row else None
+
+
+# ── Pipeline status queries ───────────────────────────────────────────────────
+
+def get_pipeline_status(db_path: Path, stage1_max_age_hours: int = 24) -> dict[str, Any]:
+    """
+    Return a summary dict for display in the dashboard:
+      - last_stage1_run: finished_at of latest successful Stage 1 run
+      - last_stage2_run: finished_at of latest successful Stage 2 run
+      - next_stage1_due: estimated next Stage 1 run time
+      - projects_added_since_last_run: count of projects first_seen after last Stage 1 run
+      - new_projects: list of {atlas_id, project_name, project_url} for those projects
+    """
+    from datetime import timedelta
+
+    result: dict[str, Any] = {
+        "last_stage1_run": None,
+        "last_stage2_run": None,
+        "next_stage1_due": None,
+        "projects_added_since_last_run": 0,
+        "new_projects": [],
+    }
+
+    last_s1 = get_latest_successful_run(db_path, stage=1)
+    last_s2 = get_latest_successful_run(db_path, stage=2)
+
+    if last_s1:
+        finished = last_s1["finished_at"]
+        result["last_stage1_run"] = finished
+        result["next_stage1_due"] = (
+            datetime.fromisoformat(finished) + timedelta(hours=stage1_max_age_hours)
+        ).isoformat()
+
+    if last_s2:
+        result["last_stage2_run"] = last_s2["finished_at"]
+
+    # Projects first seen after the last Stage 1 run started
+    if last_s1:
+        cutoff = last_s1["started_at"]
+        with _connect(db_path) as conn:
+            rows = conn.execute(
+                """SELECT i.atlas_id, i.project_name, i.project_url, i.first_seen_at,
+                          d.project_title
+                   FROM project_index i
+                   LEFT JOIN project_details d USING (atlas_id)
+                   WHERE i.first_seen_at >= ?
+                   ORDER BY i.first_seen_at DESC""",
+                (cutoff,),
+            ).fetchall()
+        result["new_projects"] = [dict(r) for r in rows]
+        result["projects_added_since_last_run"] = len(result["new_projects"])
+
+    return result
 
 
 # ── Utility ────────────────────────────────────────────────────────────────────

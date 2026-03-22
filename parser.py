@@ -239,16 +239,10 @@ class Stage2Scraper:
 
     def scrape_title(self, content: str) -> str | None:
         soup = BeautifulSoup(content, "html.parser")
-        header = soup.select_one("div.ecl-page-header__info")
-        if not header:
-            return None
-
-        title_tag = header.select_one("h1.ecl-page-header__title")
+        title_tag = soup.select_one("h1.ecl-page-header__title")
         if not title_tag:
             return None
-
-        title = self._normalize_text(title_tag.get_text(" ", strip=True))
-        return title or None
+        return self._normalize_text(title_tag.get_text(" ", strip=True)) or None
 
     def scrape_scope(self, content: str) -> str | None:
         soup = BeautifulSoup(content, "html.parser")

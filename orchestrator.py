@@ -32,6 +32,7 @@ try:
         mark_stage2_done,
         mark_stage2_failed,
         start_run,
+        upsert_project_details,
         upsert_projects,
         validate_db,
     )
@@ -46,6 +47,7 @@ except ImportError:
         mark_stage2_done,
         mark_stage2_failed,
         start_run,
+        upsert_project_details,
         upsert_projects,
         validate_db,
     )
@@ -58,7 +60,7 @@ LOGGER = setup_logging("atlas.orchestrator")
 DB_PATH = Path("data") / "epah_pipeline.db"
 
 # Re-run Stage 1 if the last successful run is older than this
-STAGE1_MAX_AGE_HOURS: int = 12
+STAGE1_MAX_AGE_HOURS: int = 24
 
 # Re-parse Stage 2 details if older than this (None = never re-parse)
 STAGE2_STALE_AFTER_DAYS: int | None = 30
@@ -157,8 +159,12 @@ def run_stage2() -> list[dict[str, Any]]:
 
             if results:
                 parsed.extend(results)
+                counts = upsert_project_details(DB_PATH, results)
+                LOGGER.info(
+                    "Stage 2 parsed: %s — db inserted=%d updated=%d",
+                    project_url, counts["inserted"], counts["updated"],
+                )
                 mark_stage2_done(DB_PATH, atlas_id)
-                LOGGER.info("Stage 2 parsed: %s", project_url)
             else:
                 mark_stage2_failed(DB_PATH, atlas_id)
                 LOGGER.warning("Stage 2 returned no data for: %s", project_url)
@@ -188,8 +194,11 @@ def run_pipeline() -> None:
         LOGGER.info("Database validated.")
 
     # Step 2+3 — Stage 1: discovery
-    run_stage1()
-
+    # Dev note: we return the Stage 1 discoveries here to allow skipping Stage 2 if Stage 1 is fresh.
+    temp = run_stage1()
+    if len(temp) == 0:
+        LOGGER.info("Stage 1 is fresh, Stage 2 skipped.")
+        return None
     # Step 4+5 — Stage 2: detail parsing (DB-driven selection)
     run_stage2()
 
