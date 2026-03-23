@@ -1,61 +1,135 @@
-import streamlit as st
+from __future__ import annotations
+
+from pathlib import Path
+
 import pandas as pd
 import plotly.express as px
-import plotly.graph_objects as go
+import streamlit as st
 
 from etl import (
-    load_json,
-    normalise,
-    explode_field,
     cooccurrence_matrix,
     cross_field_cooccurrence,
     data_quality_report,
-    MULTI_VALUE_FIELDS,
+    explode_field,
+    load_json,
+    normalise,
 )
 
-# ── Page config ────────────────────────────────────────────────────────────────
+try:
+    from db import get_all_project_details, get_pipeline_status, validate_db
+    from orchestrator import DB_PATH, STAGE1_MAX_AGE_HOURS
+except ImportError:
+    from .db import get_all_project_details, get_pipeline_status, validate_db
+    from .orchestrator import DB_PATH, STAGE1_MAX_AGE_HOURS
+
+
+DEFAULT_DATA_PATH = Path("data/raw/epah_details_atlas_projects_20260321T201622Z.json")
+
+
 st.set_page_config(
     page_title="Energy Poverty Atlas Dashboard",
     page_icon="⚡",
     layout="wide",
 )
 
-st.title("⚡ Energy Poverty Atlas — Project Dashboard")
-st.caption("Upload your parsed JSON dataset to explore projects, categories and attribute overlaps.")
 
-# ── Sidebar: upload + filters ──────────────────────────────────────────────────
-with st.sidebar:
-    st.header("Data Source")
-    uploaded = st.file_uploader("Upload JSON file", type=["json"])
-    default_data_path = "data/raw/epah_details_atlas_projects_20260321T201622Z.json"
-    default_raw_bytes = None
-    if not uploaded:
-        try:
-            with open(default_data_path, "rb") as f:
-                default_raw_bytes = f.read()
-            st.caption(f"Using local default dataset: `{default_data_path}`")
-        except FileNotFoundError:
-            st.warning("No default file found for upload. Please upload a JSON file to proceed.")
+@st.cache_data(show_spinner="Loading database records...")
+def load_db_dataset(db_path: str) -> pd.DataFrame:
+    rows = get_all_project_details(Path(db_path))
+    if not rows:
+        return pd.DataFrame()
+    return normalise(rows)
 
-    st.markdown("---")
-    st.header("Filters")
-    filter_scale = st.multiselect("Geographical Scale", [])
-    filter_phase = st.multiselect("Energy Poverty Phase", [])
-    filter_intervention = st.multiselect("Intervention Type", [])
-    filter_country = st.multiselect("Country", [])
 
-if not uploaded and default_raw_bytes is None:
-    st.info("Upload a JSON file in the sidebar to get started.")
-    st.stop()
-
-# ── ETL ────────────────────────────────────────────────────────────────────────
-@st.cache_data(show_spinner="Running ETL pipeline…")
+@st.cache_data(show_spinner="Running ETL pipeline...")
 def run_etl(file_bytes: bytes) -> pd.DataFrame:
     import io
+
     return normalise(load_json(io.BytesIO(file_bytes)))
 
-raw_bytes = uploaded.read() if uploaded else default_raw_bytes
-df_full = run_etl(raw_bytes)
+
+@st.cache_data(show_spinner=False)
+def load_pipeline_status(db_path: str, stage1_hours: int) -> dict:
+    return get_pipeline_status(Path(db_path), stage1_max_age_hours=stage1_hours)
+
+
+def format_timestamp(value: str | None) -> str:
+    if not value:
+        return "Not available"
+    parsed = pd.to_datetime(value, utc=True, errors="coerce")
+    if pd.isna(parsed):
+        return str(value)
+    return parsed.strftime("%Y-%m-%d")
+
+
+def format_next_check(value: str | None) -> str:
+    if not value:
+        return "Not scheduled"
+    parsed = pd.to_datetime(value, utc=True, errors="coerce")
+    if pd.isna(parsed):
+        return str(value)
+    now = pd.Timestamp.now(tz="UTC")
+    if parsed <= now:
+        return f"Due now ({parsed.strftime('%Y-%m-%d')})" #'%Y-%m-%d'
+    return parsed.strftime("%Y-%m-%d")
+
+
+def get_source_dataframe(uploaded_file) -> tuple[pd.DataFrame, str]:
+    if uploaded_file is not None:
+        return run_etl(uploaded_file.read()), "Uploaded JSON override"
+
+    if validate_db(DB_PATH):
+        db_df = load_db_dataset(str(DB_PATH))
+        if not db_df.empty:
+            return db_df, f"Database: `{DB_PATH}`"
+
+    if DEFAULT_DATA_PATH.exists():
+        with DEFAULT_DATA_PATH.open("rb") as file_handle:
+            return run_etl(file_handle.read()), f"Local JSON fallback: `{DEFAULT_DATA_PATH}`"
+
+    return pd.DataFrame(), ""
+
+
+st.title("⚡ Energy Poverty Atlas Dashboard")
+st.caption("Database-backed project monitoring with optional JSON upload override.")
+
+with st.sidebar:
+    st.header("Data Source")
+    uploaded = st.file_uploader("Upload JSON file (optional)", type=["json"])
+
+df_full, source_label = get_source_dataframe(uploaded)
+
+if df_full.empty:
+    st.error("No project data is available. Populate `project_details` or upload a JSON file.")
+    st.stop()
+
+pipeline_status = (
+    load_pipeline_status(str(DB_PATH), STAGE1_MAX_AGE_HOURS)
+    if validate_db(DB_PATH)
+    else {
+        "last_stage1_run": None,
+        "last_stage2_run": None,
+        "next_stage1_due": None,
+        "projects_added_since_last_run": 0,
+        "new_projects": [],
+    }
+)
+
+last_stage1 = format_timestamp(pipeline_status.get("last_stage1_run"))
+next_stage1 = format_next_check(pipeline_status.get("next_stage1_due"))
+
+st.info(f"Current source: {source_label or 'Unknown'}")
+
+status_col1, status_col2, status_col3 = st.columns(3)
+status_col1.metric("Projects Loaded", len(df_full))
+status_col2.metric("Last Stage 1 Update", last_stage1)
+status_col3.metric("Next Stage 1 Check", next_stage1)
+
+with st.sidebar:
+    if source_label:
+        st.caption(f"Using {source_label}")
+    st.markdown("---")
+    st.header("Filters")
 
 # Populate sidebar filters dynamically
 all_scales = sorted(df_full["geographical_scale"].dropna().unique())
@@ -82,16 +156,16 @@ if filter_country:
 
 st.sidebar.markdown(f"**{len(df)} / {len(df_full)} projects** shown")
 
-# ── Tabs ───────────────────────────────────────────────────────────────────────
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
-    "📊 Overview",
-    "📈 Descriptive Stats",
-    "🔥 Overlap Heatmap",
-    "🗂️ Project Breakdown",
-    "🧹 Data Quality",
-])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(
+    [
+        "📊 Overview",
+        "📈 Descriptive Stats",
+        "🔥 Overlap Heatmap",
+        "🗂️ Project Breakdown",
+        "🧹 Data Quality",
+    ]
+)
 
-# ─── Tab 1: Overview ───────────────────────────────────────────────────────────
 with tab1:
     st.subheader("Dataset Overview")
     c1, c2, c3, c4, c5 = st.columns(5)
@@ -107,97 +181,145 @@ with tab1:
     with col1:
         scale_counts = df["geographical_scale"].value_counts().reset_index()
         scale_counts.columns = ["Scale", "Projects"]
-        fig = px.pie(scale_counts, names="Scale", values="Projects",
-                     title="Projects by Geographical Scale", hole=0.4)
+        fig = px.pie(
+            scale_counts,
+            names="Scale",
+            values="Projects",
+            title="Projects by Geographical Scale",
+            hole=0.4,
+        )
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
         country_exp = explode_field(df, "countries_impacted")
         if not country_exp.empty:
             ctry_counts = country_exp["countries_impacted"].value_counts().reset_index()
+            # substitute long country names with shorter versions for better display
+            country_mapping = {
+                "United States of America": "USA",
+                "United Kingdom of Great Britain and Northern Ireland": "UK",
+                "Russian Federation": "Russia",
+                # Add more mappings as needed
+            }
+            ctry_counts["countries_impacted"] = ctry_counts["countries_impacted"].map(country_mapping).fillna(ctry_counts["countries_impacted"])
+
             ctry_counts.columns = ["Country", "Projects"]
-            fig2 = px.bar(ctry_counts, x="Country", y="Projects",
-                          title="Projects per Country", color="Projects",
-                          color_continuous_scale="Blues")
+            fig2 = px.bar(
+                ctry_counts,
+                x="Country",
+                y="Projects",
+                title="Projects per Country",
+                color="Projects",
+                color_continuous_scale="Blues",
+            )
             st.plotly_chart(fig2, use_container_width=True)
 
-    # Funding breakdown
     fund_counts = df["type_of_funding"].value_counts().reset_index()
     fund_counts.columns = ["Funding Type", "Projects"]
-    fig3 = px.bar(fund_counts, x="Projects", y="Funding Type", orientation="h",
-                  title="Projects by Funding Type", color="Projects",
-                  color_continuous_scale="Teal")
+    fig3 = px.bar(
+        fund_counts,
+        x="Projects",
+        y="Funding Type",
+        orientation="h",
+        title="Projects by Funding Type",
+        color="Projects",
+        color_continuous_scale="Teal",
+    )
     fig3.update_layout(yaxis=dict(autorange="reversed"))
     st.plotly_chart(fig3, use_container_width=True)
 
-# ─── Tab 2: Descriptive Stats ──────────────────────────────────────────────────
 with tab2:
     st.subheader("Descriptive Statistics")
 
     col1, col2 = st.columns(2)
 
     with col1:
-        # Intervention types distribution
         int_exp = explode_field(df, "intervention_type")
         if not int_exp.empty:
             int_counts = int_exp["intervention_type"].value_counts().reset_index()
             int_counts.columns = ["Intervention Type", "Count"]
-            fig = px.bar(int_counts, x="Count", y="Intervention Type", orientation="h",
-                         title="Intervention Types Distribution",
-                         color="Count", color_continuous_scale="Oranges")
+            fig = px.bar(
+                int_counts,
+                x="Count",
+                y="Intervention Type",
+                orientation="h",
+                title="Intervention Types Distribution",
+                color="Count",
+                color_continuous_scale="Oranges",
+            )
             fig.update_layout(yaxis=dict(autorange="reversed"))
             st.plotly_chart(fig, use_container_width=True)
 
     with col2:
-        # Energy poverty phases distribution
         phase_exp = explode_field(df, "energy_poverty_phase")
         if not phase_exp.empty:
             phase_counts = phase_exp["energy_poverty_phase"].value_counts().reset_index()
             phase_counts.columns = ["Phase", "Count"]
-            fig2 = px.bar(phase_counts, x="Phase", y="Count",
-                          title="Energy Poverty Phases Distribution",
-                          color="Count", color_continuous_scale="Purples")
+            fig2 = px.bar(
+                phase_counts,
+                x="Phase",
+                y="Count",
+                title="Energy Poverty Phases Distribution",
+                color="Count",
+                color_continuous_scale="Purples",
+            )
             st.plotly_chart(fig2, use_container_width=True)
 
     st.markdown("---")
     col3, col4 = st.columns(2)
 
     with col3:
-        fig3 = px.histogram(df, x="country_count", nbins=10,
-                            title="Distribution of Countries per Project",
-                            labels={"country_count": "Number of Countries"},
-                            color_discrete_sequence=["#2196F3"])
+        fig3 = px.histogram(
+            df,
+            x="country_count",
+            nbins=10,
+            title="Distribution of Countries per Project",
+            labels={"country_count": "Number of Countries"},
+            color_discrete_sequence=["#2196F3"],
+        )
         st.plotly_chart(fig3, use_container_width=True)
 
     with col4:
-        fig4 = px.histogram(df, x="intervention_count", nbins=8,
-                            title="Distribution of Intervention Types per Project",
-                            labels={"intervention_count": "Number of Interventions"},
-                            color_discrete_sequence=["#FF9800"])
+        fig4 = px.histogram(
+            df,
+            x="intervention_count",
+            nbins=8,
+            title="Distribution of Intervention Types per Project",
+            labels={"intervention_count": "Number of Interventions"},
+            color_discrete_sequence=["#FF9800"],
+        )
         st.plotly_chart(fig4, use_container_width=True)
 
-    # Professionals involved
     prof_exp = explode_field(df, "professionals_involved")
     if not prof_exp.empty:
         prof_counts = prof_exp["professionals_involved"].value_counts().reset_index()
         prof_counts.columns = ["Professional Type", "Count"]
-        fig5 = px.bar(prof_counts, x="Professional Type", y="Count",
-                      title="Professionals Involved Across Projects",
-                      color="Count", color_continuous_scale="Greens")
+        fig5 = px.bar(
+            prof_counts,
+            x="Professional Type",
+            y="Count",
+            title="Professionals Involved Across Projects",
+            color="Count",
+            color_continuous_scale="Greens",
+        )
         st.plotly_chart(fig5, use_container_width=True)
 
-# ─── Tab 3: Overlap Heatmap ────────────────────────────────────────────────────
 with tab3:
     st.subheader("Category Overlap & Co-occurrence")
 
     heatmap_mode = st.radio(
         "Select heatmap type",
-        ["Intervention Types (self)", "Phases (self)", "Intervention × Phase",
-         "Intervention × Country", "Phase × Country"],
+        [
+            "Intervention Types (self)",
+            "Phases (self)",
+            "Intervention × Phase",
+            "Intervention × Country",
+            "Phase × Country",
+        ],
         horizontal=True,
     )
 
-    def plot_heatmap(matrix: pd.DataFrame, title: str):
+    def plot_heatmap(matrix: pd.DataFrame, title: str) -> None:
         if matrix.empty:
             st.warning("Not enough data to build this matrix.")
             return
@@ -212,37 +334,45 @@ with tab3:
         st.plotly_chart(fig, use_container_width=True)
 
     if heatmap_mode == "Intervention Types (self)":
-        m = cooccurrence_matrix(df, "intervention_type")
-        plot_heatmap(m, "Co-occurrence of Intervention Types across Projects")
+        matrix = cooccurrence_matrix(df, "intervention_type")
+        plot_heatmap(matrix, "Co-occurrence of Intervention Types across Projects")
 
     elif heatmap_mode == "Phases (self)":
-        m = cooccurrence_matrix(df, "energy_poverty_phase")
-        plot_heatmap(m, "Co-occurrence of Energy Poverty Phases across Projects")
+        matrix = cooccurrence_matrix(df, "energy_poverty_phase")
+        plot_heatmap(matrix, "Co-occurrence of Energy Poverty Phases across Projects")
 
     elif heatmap_mode == "Intervention × Phase":
-        m = cross_field_cooccurrence(df, "intervention_type", "energy_poverty_phase")
-        plot_heatmap(m, "Intervention Types × Energy Poverty Phases")
+        matrix = cross_field_cooccurrence(df, "intervention_type", "energy_poverty_phase")
+        plot_heatmap(matrix, "Intervention Types × Energy Poverty Phases")
 
     elif heatmap_mode == "Intervention × Country":
-        m = cross_field_cooccurrence(df, "intervention_type", "countries_impacted")
-        plot_heatmap(m, "Intervention Types × Countries")
+        matrix = cross_field_cooccurrence(df, "intervention_type", "countries_impacted")
+        plot_heatmap(matrix, "Intervention Types × Countries")
 
     elif heatmap_mode == "Phase × Country":
-        m = cross_field_cooccurrence(df, "energy_poverty_phase", "countries_impacted")
-        plot_heatmap(m, "Energy Poverty Phases × Countries")
+        matrix = cross_field_cooccurrence(df, "energy_poverty_phase", "countries_impacted")
+        plot_heatmap(matrix, "Energy Poverty Phases × Countries")
 
     st.markdown("---")
-    st.markdown("**ℹ️ How to read this:** Each cell shows how many projects share both row and column attributes. Higher values = stronger co-occurrence.")
+    st.markdown(
+        "**ℹ️ How to read this:** Each cell shows how many projects share both row and column attributes. Higher values mean stronger co-occurrence."
+    )
 
-# ─── Tab 4: Project Breakdown ──────────────────────────────────────────────────
 with tab4:
     st.subheader("Per-Project Attribute Breakdown")
 
     display_cols = [
-        "atlas_id", "project_title", "geographical_scale", "project_scope",
-        "project_url", "country_count", "intervention_count", "phase_count", "type_of_funding"
+        "atlas_id",
+        "project_title",
+        "geographical_scale",
+        "project_scope",
+        "project_url",
+        "country_count",
+        "intervention_count",
+        "phase_count",
+        "type_of_funding",
     ]
-    available = [c for c in display_cols if c in df.columns]
+    available = [column for column in display_cols if column in df.columns]
     display_df = df[available].copy()
     column_config = None
     if "project_url" in display_df.columns:
@@ -261,11 +391,12 @@ with tab4:
 
     st.markdown("---")
     st.markdown("### Project Detail")
-    titles = df["project_title"].dropna().tolist()
+    titles = df["project_title"].fillna(df["project_name"]).dropna().tolist()
     selected = st.selectbox("Select a project to inspect", titles)
 
     if selected:
-        row = df[df["project_title"] == selected].iloc[0]
+        matches = df["project_title"].fillna(df["project_name"]) == selected
+        row = df[matches].iloc[0]
         col1, col2 = st.columns(2)
         with col1:
             project_url = row.get("project_url")
@@ -287,41 +418,57 @@ with tab4:
         with st.expander("🤝 Partners Involved"):
             partners = row.get("partners_involved_list", [])
             if partners:
-                for p in partners:
-                    st.markdown(f"- {p}")
+                for partner in partners:
+                    st.markdown(f"- {partner}")
             else:
                 st.write("No partners listed.")
 
     st.markdown("---")
     st.markdown("### 📊 Attribute Counts per Project")
-    melt_df = df[["project_title", "country_count", "intervention_count", "phase_count"]].copy()
-    melt_df = melt_df.melt(id_vars="project_title", var_name="Attribute", value_name="Count")
-    melt_df["Attribute"] = melt_df["Attribute"].map({
-        "country_count": "Countries",
-        "intervention_count": "Interventions",
-        "phase_count": "Phases",
-    })
-    fig = px.bar(melt_df, x="project_title", y="Count", color="Attribute",
-                 barmode="group", title="Attribute Counts per Project",
-                 labels={"project_title": "Project"})
+    melt_df = df[["project_title", "project_name", "country_count", "intervention_count", "phase_count"]].copy()
+    melt_df["project_label"] = melt_df["project_title"].fillna(melt_df["project_name"]).fillna("Untitled project")
+    melt_df = melt_df.melt(
+        id_vars="project_label",
+        value_vars=["country_count", "intervention_count", "phase_count"],
+        var_name="Attribute",
+        value_name="Count",
+    )
+    melt_df["Attribute"] = melt_df["Attribute"].map(
+        {
+            "country_count": "Countries",
+            "intervention_count": "Interventions",
+            "phase_count": "Phases",
+        }
+    )
+    fig = px.bar(
+        melt_df,
+        x="project_label",
+        y="Count",
+        color="Attribute",
+        barmode="group",
+        title="Attribute Counts per Project",
+        labels={"project_label": "Project"},
+    )
     fig.update_xaxes(tickangle=30)
     st.plotly_chart(fig, use_container_width=True)
 
-# ─── Tab 5: Data Quality ───────────────────────────────────────────────────────
 with tab5:
     st.subheader("🧹 Data Quality Report")
     dq = data_quality_report(df)
 
     col1, col2 = st.columns([2, 1])
     with col1:
-        fig = px.bar(dq, x="field", y="fill_rate_%",
-                     title="Field Fill Rate (%)",
-                     color="fill_rate_%",
-                     color_continuous_scale="RdYlGn",
-                     range_color=[0, 100])
+        fig = px.bar(
+            dq,
+            x="field",
+            y="fill_rate_%",
+            title="Field Fill Rate (%)",
+            color="fill_rate_%",
+            color_continuous_scale="RdYlGn",
+            range_color=[0, 100],
+        )
         fig.update_xaxes(tickangle=45)
-        fig.add_hline(y=80, line_dash="dash", line_color="orange",
-                      annotation_text="80% threshold")
+        fig.add_hline(y=80, line_dash="dash", line_color="orange", annotation_text="80% threshold")
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
@@ -329,5 +476,5 @@ with tab5:
 
     st.markdown("---")
     st.markdown("### 📥 Export Cleaned Data")
-    csv = df.drop(columns=[c for c in df.columns if c.endswith("_list")]).to_csv(index=False)
+    csv = df.drop(columns=[column for column in df.columns if column.endswith("_list")]).to_csv(index=False)
     st.download_button("⬇️ Download cleaned CSV", csv, "cleaned_projects.csv", "text/csv")

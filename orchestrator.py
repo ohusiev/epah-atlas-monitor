@@ -60,10 +60,10 @@ LOGGER = setup_logging("atlas.orchestrator")
 DB_PATH = Path("data") / "epah_pipeline.db"
 
 # Re-run Stage 1 if the last successful run is older than this
-STAGE1_MAX_AGE_HOURS: int = 24
+STAGE1_MAX_AGE_HOURS: int = 24 * 14
 
 # Re-parse Stage 2 details if older than this (None = never re-parse)
-STAGE2_STALE_AFTER_DAYS: int | None = 30
+STAGE2_STALE_AFTER_DAYS: int | None #= 96
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
