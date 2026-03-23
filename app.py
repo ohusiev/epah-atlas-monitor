@@ -117,6 +117,8 @@ pipeline_status = (
 
 last_stage1 = format_timestamp(pipeline_status.get("last_stage1_run"))
 next_stage1 = format_next_check(pipeline_status.get("next_stage1_due"))
+new_projects_since_last_update = pipeline_status.get("projects_added_since_last_run", 0)
+recent_projects_df = pd.DataFrame(pipeline_status.get("new_projects", []))
 
 st.info(f"Current source: {source_label or 'Unknown'}")
 
@@ -168,12 +170,46 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(
 
 with tab1:
     st.subheader("Dataset Overview")
-    c1, c2, c3, c4, c5 = st.columns(5)
+    c1, c2, c3, c4, c5, c6 = st.columns(6)
     c1.metric("Total Projects", len(df))
     c2.metric("Countries", len({v for lst in df["countries_impacted_list"] for v in lst}))
     c3.metric("Intervention Types", len({v for lst in df["intervention_type_list"] for v in lst}))
     c4.metric("Funding Types", df["type_of_funding"].nunique())
     c5.metric("Geo Scales", df["geographical_scale"].nunique())
+    c6.metric("New Since Last Update", new_projects_since_last_update)
+
+    st.caption("Recent projects can also be seen in Project Breakdown by sorting the table by `parsed_at`.")
+
+    if recent_projects_df.empty:
+        st.info("No new projects were added in the latest Stage 1 update.")
+    else:
+        #st.markdown("#### New Projects In Latest Update")
+        if st.button("Show New Projects In Latest Update", key="show_recent"):
+            recent_projects_df = recent_projects_df.rename(
+                columns={
+                    "project_title": "Title",
+                    "project_url": "Link",
+                }
+            )
+            if "last_stage1_seen_at" not in recent_projects_df.columns:
+                recent_projects_df["last_stage1_seen_at"] = None
+            recent_projects_df = recent_projects_df.reindex(
+                columns=["Title", "Link", "last_stage1_seen_at"],
+                fill_value=None,
+            )
+            st.dataframe(
+                recent_projects_df,
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "Link": st.column_config.LinkColumn("Link", display_text="Open project"),
+                    "last_stage1_seen_at": st.column_config.DatetimeColumn(
+                        "last_stage1_seen_at",
+                        format="YYYY-MM-DD HH:mm",
+                    ),
+                },
+            )
+
 
     st.markdown("---")
     col1, col2 = st.columns(2)
@@ -360,11 +396,13 @@ with tab3:
 
 with tab4:
     st.subheader("Per-Project Attribute Breakdown")
+    st.caption("Recent projects can also be found here by sorting the table by `parsed_at`.")
 
     display_cols = [
         "atlas_id",
         "project_title",
         "geographical_scale",
+        'parsed_at',
         "project_scope",
         "project_url",
         "country_count",
@@ -375,12 +413,13 @@ with tab4:
     available = [column for column in display_cols if column in df.columns]
     display_df = df[available].copy()
     column_config = None
-    if "project_url" in display_df.columns:
+    if "project_url" in display_df.columns and "parsed_at" in display_df.columns:
         column_config = {
             "project_url": st.column_config.LinkColumn(
                 "Link",
                 display_text="Open project",
-            )
+            ),
+        "parsed_at": st.column_config.DatetimeColumn(format="YYYY-MM-DD", help="When this project was parsed into the database"),
         }
     st.dataframe(
         display_df,

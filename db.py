@@ -325,8 +325,8 @@ def get_pipeline_status(db_path: Path, stage1_max_age_hours: int = 24) -> dict[s
       - last_stage1_run: finished_at of latest successful Stage 1 run
       - last_stage2_run: finished_at of latest successful Stage 2 run
       - next_stage1_due: estimated next Stage 1 run time
-      - projects_added_since_last_run: count of projects first_seen after last Stage 1 run
-      - new_projects: list of {atlas_id, project_name, project_url} for those projects
+      - projects_added_since_last_run: count of projects first seen in the latest Stage 1 snapshot
+      - new_projects: list of latest newly discovered projects
     """
     from datetime import timedelta
 
@@ -351,21 +351,33 @@ def get_pipeline_status(db_path: Path, stage1_max_age_hours: int = 24) -> dict[s
     if last_s2:
         result["last_stage2_run"] = last_s2["finished_at"]
 
-    # Projects first seen after the last Stage 1 run started
-    if last_s1:
-        cutoff = last_s1["started_at"]
-        with _connect(db_path) as conn:
+    with _connect(db_path) as conn:
+        latest_stage1_seen_at_row = conn.execute(
+            """SELECT MAX(last_stage1_seen_at) AS latest_stage1_seen_at
+               FROM project_index"""
+        ).fetchone()
+
+        latest_stage1_seen_at = (
+            latest_stage1_seen_at_row["latest_stage1_seen_at"]
+            if latest_stage1_seen_at_row
+            else None
+        )
+
+        if latest_stage1_seen_at:
             rows = conn.execute(
-                """SELECT i.atlas_id, i.project_name, i.project_url, i.first_seen_at,
-                          d.project_title
+                """SELECT i.atlas_id,
+                          COALESCE(d.project_title, i.project_name) AS project_title,
+                          i.project_url,
+                          i.last_stage1_seen_at
                    FROM project_index i
                    LEFT JOIN project_details d USING (atlas_id)
-                   WHERE i.first_seen_at >= ?
-                   ORDER BY i.first_seen_at DESC""",
-                (cutoff,),
+                   WHERE i.last_stage1_seen_at = ?
+                     AND i.first_seen_at = i.last_stage1_seen_at
+                   ORDER BY COALESCE(d.project_title, i.project_name) ASC""",
+                (latest_stage1_seen_at,),
             ).fetchall()
-        result["new_projects"] = [dict(r) for r in rows]
-        result["projects_added_since_last_run"] = len(result["new_projects"])
+            result["new_projects"] = [dict(r) for r in rows]
+            result["projects_added_since_last_run"] = len(result["new_projects"])
 
     return result
 
