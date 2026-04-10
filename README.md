@@ -72,6 +72,7 @@ The project writes data to:
 - `data/epah_pipeline.db`: main SQLite database used by the dashboard
 - `data/raw/epah_list_atlas_projects_*.json`: Stage 1 discovery snapshots
 - `data/raw/epah_details_atlas_projects_*.jsonl`: Stage 2 detail snapshots
+- `data/raw/epah_details_atlas_projects.jsonl`: Stage 2 detail snapshot, being appended with new projects (if they were parsed) with each pipeline iteration
 - `logs/atlas.parser.log`: scraper logs
 - `logs/atlas.orchestrator.log`: pipeline logs
 
