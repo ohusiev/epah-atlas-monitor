@@ -37,7 +37,7 @@ If you want the `uv` cache inside the repository:
 
 ```powershell
 $env:UV_CACHE_DIR = ".uv-cache"
-uv run streamlit run app.py
+uv run python -m streamlit run app.py
 ```
 
 ### Without `uv`

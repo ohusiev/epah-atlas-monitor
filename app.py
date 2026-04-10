@@ -140,7 +140,7 @@ def get_source_dataframe(uploaded_file) -> tuple[pd.DataFrame, str]:
 
 st.title("⚡ Energy Poverty Atlas Dashboard")
 # add subtitle with smaller font and lighter color
-st.caption("This is a local ethical scraper, persistence layer  (with a database backend and optional JSON upload override), and Streamlit dashboard for monitoring and descriptive analytics of projects from the European Energy Poverty Advisory Hub (EPAH) Atlas. **Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.**")
+st.caption("This is a local ethical scraper, persistence layer  (with a database backend and optional JSON upload override), and Streamlit dashboard for monitoring and descriptive analytics of projects from the **[European Energy Poverty Advisory Hub (EPAH) Atlas](https://energy-poverty.ec.europa.eu/discover-community/epah-atlas)**. **Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.**")
 startup_pipeline_logs = run_startup_pipeline_once()
 if startup_pipeline_logs:
     with st.status(label = "Parser pipeline startup information", state ="complete"):#, icon="🔔", duration=7)
