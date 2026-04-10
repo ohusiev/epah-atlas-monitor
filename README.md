@@ -1,6 +1,6 @@
 # EPAH Atlas Monitor
 
-Local scraper, persistence layer, and Streamlit dashboard for monitoring and descriptive analytics overview of projects from the European Energy Poverty Advisory Hub (EPAH) Atlas.
+This is a local ethical scraper, persistence layer  (with a database backend and optional JSON upload override), and Streamlit dashboard for monitoring and descriptive analytics of projects from the European Energy Poverty Advisory Hub (EPAH) Atlas. **Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.**
 
 ## What This Project Does
 

@@ -196,10 +196,10 @@ def run_pipeline() -> None:
 
     # Step 2+3 — Stage 1: discovery
     # Dev note: we return the Stage 1 discoveries here to allow skipping Stage 2 if Stage 1 is fresh.
-    ##temp = run_stage1()
-    ##if len(temp) == 0:
-    ##    LOGGER.info("Stage 1 is fresh, Stage 2 skipped.")
-    ##    return None
+    temp = run_stage1()
+    if len(temp) == 0:
+        LOGGER.info("Stage 1 is fresh, Stage 2 skipped.")
+        return None
     # Step 4+5 — Stage 2: detail parsing (DB-driven selection)
     run_stage2()
 

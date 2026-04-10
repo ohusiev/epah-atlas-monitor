@@ -140,11 +140,11 @@ def get_source_dataframe(uploaded_file) -> tuple[pd.DataFrame, str]:
 
 st.title("⚡ Energy Poverty Atlas Dashboard")
 # add subtitle with smaller font and lighter color
-st.caption("This is a local ethical scraper, persistence layer, and Streamlit dashboard (with database-backed and optional JSON upload override) for monitoring and descriptive analytics overview of projects from the European Energy Poverty Advisory Hub (EPAH) Atlas.")
-st.caption("Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.")
+st.caption("This is a local ethical scraper, persistence layer  (with a database backend and optional JSON upload override), and Streamlit dashboard for monitoring and descriptive analytics of projects from the European Energy Poverty Advisory Hub (EPAH) Atlas. **Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.**")
 startup_pipeline_logs = run_startup_pipeline_once()
 if startup_pipeline_logs:
-    st.status(startup_pipeline_logs, state ="complete")#, icon="🔔", duration=7)
+    with st.status(label = "Parser pipeline startup information", state ="complete"):#, icon="🔔", duration=7)
+        st.text(startup_pipeline_logs)
 
 with st.sidebar:
     st.header("Data Source")
@@ -173,7 +173,7 @@ next_stage1 = format_next_check(pipeline_status.get("next_stage1_due"))
 new_projects_since_last_update = pipeline_status.get("projects_added_since_last_run", 0)
 recent_projects_df = pd.DataFrame(pipeline_status.get("new_projects", []))
 
-st.info(f"Current source: {source_label or 'Unknown'}")
+## st.info(f"Current source: {source_label or 'Unknown'}")
 
 status_col1, status_col2, status_col3 = st.columns(3)
 status_col1.metric("Projects Loaded", len(df_full))
