@@ -63,8 +63,7 @@ DB_PATH = Path("data") / "epah_pipeline.db"
 STAGE1_MAX_AGE_HOURS: int = 24 * 14 # 2 weeks
 
 # Re-parse Stage 2 details if older than this (None = never re-parse)
-STAGE2_STALE_AFTER_DAYS: int=24 * 14 #| None #= 96
-
+STAGE2_STALE_AFTER_DAYS: int | None = None # int= 24 * 1000 # effectively disable automatic stale re-parsing for now; or change to  trigger manually as needed
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
