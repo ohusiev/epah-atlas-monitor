@@ -12,6 +12,8 @@ This repository combines three pieces:
 
 The dashboard also triggers the pipeline once on startup, so opening the app can refresh local data if new or stale records need processing.
 
+> Developed with an application of Claude and Codex agentic assistance
+
 ## Stack
 
 - Python 3.11+
