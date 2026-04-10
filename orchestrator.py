@@ -79,15 +79,29 @@ def _stage1_is_fresh() -> bool:
 
 
 def _save_stage2_snapshot(projects: list[dict[str, Any]]) -> Path:
-    """Persist Stage-2 results as a timestamped JSONL snapshot."""
+    """Persist Stage-2 results as both a timestamped and rolling JSONL snapshot."""
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    out = RAW_DIR / f"epah_details_atlas_projects_{ts}.jsonl"
-    with out.open("w", encoding="utf-8") as fh:
+    timestamped_out = RAW_DIR / f"epah_details_atlas_projects_{ts}.jsonl"
+    rolling_out = RAW_DIR / "epah_details_atlas_projects.jsonl"
+
+    with timestamped_out.open("w", encoding="utf-8") as fh:
         for record in projects:
             fh.write(json.dumps(record, ensure_ascii=False) + "\n")
-    LOGGER.info("Stage 2 snapshot saved: %s (%d records)", out, len(projects))
-    return out
+
+    rolling_mode = "a" if rolling_out.exists() else "w" # a = append if exists, else w = write new
+    with rolling_out.open(rolling_mode, encoding="utf-8") as fh:
+        for record in projects:
+            fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+    LOGGER.info("Stage 2 timestamped snapshot saved: %s (%d records)", timestamped_out, len(projects))
+    LOGGER.info(
+        "Stage 2 rolling snapshot %s: %s (%d records)",
+        "appended" if rolling_mode == "a" else "created",
+        rolling_out,
+        len(projects),
+    )
+    return timestamped_out
 
 
 # ── Stage 1 orchestration ──────────────────────────────────────────────────────
