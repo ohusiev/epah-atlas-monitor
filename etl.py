@@ -1,9 +1,10 @@
-from typing import Any
-
-import pandas as pd
 import json
 from itertools import combinations
 from collections import defaultdict
+from pathlib import Path
+from typing import Any
+
+import pandas as pd
 
 try:
     from .config import MAX_AGE_DAYS
@@ -19,14 +20,58 @@ MULTI_VALUE_FIELDS = [
     "partners_involved",
 ]
 
+COUNTRY_NORMALISATION_MAP = {
+    "United States of America": "USA",
+    "United Kingdon": "UK",
+    "Great Britain": "UK",
+    "United Kingdom of Great Britain and Northern Ireland": "UK",
+    "United Kingdom": "UK",
+    "Russian Federation": "Russia",
+    "Micronesia (Federated States of)": "Micronesia",
+}
+PROJECT_URL_PREFIX = "https://energy-poverty.ec.europa.eu/node/"
+
+
+def _load_jsonl_lines(lines: list[str]) -> list[dict]:
+    records: list[dict] = []
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        parsed = json.loads(stripped)
+        if isinstance(parsed, dict):
+            records.append(parsed)
+        else:
+            raise ValueError("Each JSONL line must contain a JSON object.")
+    return records
+
+
+def _decode_text(raw: bytes | str) -> str:
+    return raw.decode("utf-8") if isinstance(raw, bytes) else raw
+
 
 def load_json(file) -> list[dict]:
-    """Load raw JSON from a file-like object or path."""
+    """Load raw JSON or JSONL from a file-like object or path."""
+    suffix = ""
+
     if hasattr(file, "read"):
-        raw = json.load(file)
+        raw_content = file.read()
+        text = _decode_text(raw_content)
+        if hasattr(file, "name"):
+            suffix = Path(file.name).suffix.lower()
     else:
-        with open(file, "r", encoding="utf-8") as f:
-            raw = json.load(f)
+        path = Path(file)
+        suffix = path.suffix.lower()
+        text = path.read_text(encoding="utf-8")
+
+    if suffix == ".jsonl":
+        return _load_jsonl_lines(text.splitlines())
+
+    try:
+        raw = json.loads(text)
+    except json.JSONDecodeError:
+        return _load_jsonl_lines(text.splitlines())
+
     return raw if isinstance(raw, list) else [raw]
 
 
@@ -36,9 +81,30 @@ def _split_field(val: str | None) -> list[str]:
     return [v.strip() for v in str(val).split(";") if v.strip()]
 
 
+def _normalise_countries(values: list[str]) -> list[str]:
+    return [COUNTRY_NORMALISATION_MAP.get(value, value) for value in values]
+
+
+def _build_project_url(atlas_id: Any) -> str | None:
+    if atlas_id is None or pd.isna(atlas_id):
+        return None
+    atlas_id_str = str(atlas_id).strip()
+    if not atlas_id_str:
+        return None
+    return f"{PROJECT_URL_PREFIX}{atlas_id_str}"
+
+
 def normalise(raw: list[dict]) -> pd.DataFrame:
     """Flatten and normalise raw records into a clean DataFrame."""
     df = pd.DataFrame(raw)
+
+    if "project_url" not in df.columns:
+        df["project_url"] = None
+    if "atlas_id" in df.columns:
+        missing_project_url = df["project_url"].isna()
+        if df["project_url"].dtype == object:
+            missing_project_url = missing_project_url | (df["project_url"].fillna("").str.strip() == "")
+        df.loc[missing_project_url, "project_url"] = df.loc[missing_project_url, "atlas_id"].apply(_build_project_url)
 
     # Deduplicate
     df = df.drop_duplicates(subset=["project_url"])
@@ -55,6 +121,9 @@ def normalise(raw: list[dict]) -> pd.DataFrame:
     for field in MULTI_VALUE_FIELDS:
         if field in df.columns:
             df[field + "_list"] = df[field].apply(_split_field)
+
+    if "countries_impacted" in df.columns:
+        df["countries_impacted_list"] = df["countries_impacted_list"].apply(_normalise_countries)
 
     # Derived: country count per project
     df["country_count"] = df["countries_impacted_list"].apply(len)

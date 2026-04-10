@@ -60,10 +60,10 @@ LOGGER = setup_logging("atlas.orchestrator")
 DB_PATH = Path("data") / "epah_pipeline.db"
 
 # Re-run Stage 1 if the last successful run is older than this
-STAGE1_MAX_AGE_HOURS: int = 24 * 14
+STAGE1_MAX_AGE_HOURS: int = 24 * 14 # 2 weeks
 
 # Re-parse Stage 2 details if older than this (None = never re-parse)
-STAGE2_STALE_AFTER_DAYS: int | None #= 96
+STAGE2_STALE_AFTER_DAYS: int=24 * 14 #| None #= 96
 
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
@@ -95,8 +95,8 @@ def _save_stage2_snapshot(projects: list[dict[str, Any]]) -> Path:
 def run_stage1() -> list[dict[str, Any]]:
     if _stage1_is_fresh():
         LOGGER.info(
-            "Stage 1 skipped — last successful run is within %d hours.",
-            STAGE1_MAX_AGE_HOURS,
+            "Stage 1 skipped — last successful run is within %d hours (i.e. %d days) .",
+            STAGE1_MAX_AGE_HOURS,STAGE1_MAX_AGE_HOURS/24
         )
         return []
 
@@ -184,6 +184,7 @@ def run_stage2() -> list[dict[str, Any]]:
 # ── Entry point ────────────────────────────────────────────────────────────────
 
 def run_pipeline() -> None:
+    """A Simple two-stage controller"""
     LOGGER.info("Pipeline starting. DB path: %s", DB_PATH)
 
     # Step 1 — initialise or validate DB
@@ -195,10 +196,10 @@ def run_pipeline() -> None:
 
     # Step 2+3 — Stage 1: discovery
     # Dev note: we return the Stage 1 discoveries here to allow skipping Stage 2 if Stage 1 is fresh.
-    temp = run_stage1()
-    if len(temp) == 0:
-        LOGGER.info("Stage 1 is fresh, Stage 2 skipped.")
-        return None
+    ##temp = run_stage1()
+    ##if len(temp) == 0:
+    ##    LOGGER.info("Stage 1 is fresh, Stage 2 skipped.")
+    ##    return None
     # Step 4+5 — Stage 2: detail parsing (DB-driven selection)
     run_stage2()
 

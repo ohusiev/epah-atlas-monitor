@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import io
+import logging
 from pathlib import Path
 
 import pandas as pd
@@ -14,6 +16,7 @@ from etl import (
     load_json,
     normalise,
 )
+from orchestrator import run_pipeline
 
 try:
     from db import get_all_project_details, get_pipeline_status, validate_db
@@ -53,6 +56,37 @@ def load_pipeline_status(db_path: str, stage1_hours: int) -> dict:
     return get_pipeline_status(Path(db_path), stage1_max_age_hours=stage1_hours)
 
 
+def run_startup_pipeline_once() -> str:
+    if st.session_state.get("_startup_pipeline_ran", False):
+        return st.session_state.get("_startup_pipeline_logs", "")
+
+    log_buffer = io.StringIO()
+    log_handler = logging.StreamHandler(log_buffer)
+    log_handler.setFormatter(
+        logging.Formatter("%(asctime)s | %(levelname)s | %(name)s | %(message)s \n")
+    )
+
+    startup_loggers = [
+        logging.getLogger("atlas.orchestrator"),
+        logging.getLogger("atlas.parser"),
+    ]
+
+    for logger in startup_loggers:
+        logger.addHandler(log_handler)
+
+    try:
+        run_pipeline()
+    finally:
+        for logger in startup_loggers:
+            logger.removeHandler(log_handler)
+        log_handler.close()
+
+    logs = log_buffer.getvalue().strip()
+    st.session_state["_startup_pipeline_ran"] = True
+    st.session_state["_startup_pipeline_logs"] = logs
+    return logs
+
+
 def format_timestamp(value: str | None) -> str:
     if not value:
         return "Not available"
@@ -74,6 +108,19 @@ def format_next_check(value: str | None) -> str:
     return parsed.strftime("%Y-%m-%d")
 
 
+def get_latest_local_snapshot() -> Path | None:
+    raw_dir = DEFAULT_DATA_PATH.parent
+    if not raw_dir.exists():
+        return DEFAULT_DATA_PATH if DEFAULT_DATA_PATH.exists() else None
+
+    matches = sorted(raw_dir.glob("epah_details_atlas_projects_*.json"))
+    matches.extend(sorted(raw_dir.glob("epah_details_atlas_projects_*.jsonl")))
+    if matches:
+        return max(matches, key=lambda path: path.stat().st_mtime)
+
+    return DEFAULT_DATA_PATH if DEFAULT_DATA_PATH.exists() else None
+
+
 def get_source_dataframe(uploaded_file) -> tuple[pd.DataFrame, str]:
     if uploaded_file is not None:
         return run_etl(uploaded_file.read()), "Uploaded JSON override"
@@ -83,19 +130,25 @@ def get_source_dataframe(uploaded_file) -> tuple[pd.DataFrame, str]:
         if not db_df.empty:
             return db_df, f"Database: `{DB_PATH}`"
 
-    if DEFAULT_DATA_PATH.exists():
-        with DEFAULT_DATA_PATH.open("rb") as file_handle:
-            return run_etl(file_handle.read()), f"Local JSON fallback: `{DEFAULT_DATA_PATH}`"
+    local_snapshot = get_latest_local_snapshot()
+    if local_snapshot is not None:
+        with local_snapshot.open("rb") as file_handle:
+            return run_etl(file_handle.read()), f"Local file fallback: `{local_snapshot}`"
 
     return pd.DataFrame(), ""
 
 
 st.title("⚡ Energy Poverty Atlas Dashboard")
-st.caption("Database-backed project monitoring with optional JSON upload override.")
+# add subtitle with smaller font and lighter color
+st.caption("This is a local ethical scraper, persistence layer, and Streamlit dashboard (with database-backed and optional JSON upload override) for monitoring and descriptive analytics overview of projects from the European Energy Poverty Advisory Hub (EPAH) Atlas.")
+st.caption("Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.")
+startup_pipeline_logs = run_startup_pipeline_once()
+if startup_pipeline_logs:
+    st.status(startup_pipeline_logs, state ="complete")#, icon="🔔", duration=7)
 
 with st.sidebar:
     st.header("Data Source")
-    uploaded = st.file_uploader("Upload JSON file (optional)", type=["json"])
+    uploaded = st.file_uploader("Upload JSON file (optional)", type=["json", "jsonl"])
 
 df_full, source_label = get_source_dataframe(uploaded)
 
@@ -252,16 +305,15 @@ with tab1:
 
     fund_counts = df["type_of_funding"].value_counts().reset_index()
     fund_counts.columns = ["Funding Type", "Projects"]
-    fig3 = px.bar(
+    #Graph cloud of words in the funding types, sized by count
+    fig3 = px.treemap(
         fund_counts,
-        x="Projects",
-        y="Funding Type",
-        orientation="h",
+        path=["Funding Type"],
+        values="Projects",
         title="Projects by Funding Type",
         color="Projects",
-        color_continuous_scale="Teal",
+        color_continuous_scale="Greens",
     )
-    fig3.update_layout(yaxis=dict(autorange="reversed"))
     st.plotly_chart(fig3, use_container_width=True)
 
 with tab2:
@@ -430,11 +482,11 @@ with tab4:
 
     st.markdown("---")
     st.markdown("### Project Detail")
-    titles = df["project_title"].fillna(df["project_name"]).dropna().tolist()
+    titles = df["project_title"].dropna().tolist()
     selected = st.selectbox("Select a project to inspect", titles)
 
     if selected:
-        matches = df["project_title"].fillna(df["project_name"]) == selected
+        matches = df["project_title"] == selected
         row = df[matches].iloc[0]
         col1, col2 = st.columns(2)
         with col1:
@@ -463,37 +515,12 @@ with tab4:
                 st.write("No partners listed.")
 
     st.markdown("---")
-    st.markdown("### 📊 Attribute Counts per Project")
-    melt_df = df[["project_title", "project_name", "country_count", "intervention_count", "phase_count"]].copy()
-    melt_df["project_label"] = melt_df["project_title"].fillna(melt_df["project_name"]).fillna("Untitled project")
-    melt_df = melt_df.melt(
-        id_vars="project_label",
-        value_vars=["country_count", "intervention_count", "phase_count"],
-        var_name="Attribute",
-        value_name="Count",
-    )
-    melt_df["Attribute"] = melt_df["Attribute"].map(
-        {
-            "country_count": "Countries",
-            "intervention_count": "Interventions",
-            "phase_count": "Phases",
-        }
-    )
-    fig = px.bar(
-        melt_df,
-        x="project_label",
-        y="Count",
-        color="Attribute",
-        barmode="group",
-        title="Attribute Counts per Project",
-        labels={"project_label": "Project"},
-    )
-    fig.update_xaxes(tickangle=30)
-    st.plotly_chart(fig, use_container_width=True)
 
 with tab5:
     st.subheader("🧹 Data Quality Report")
     dq = data_quality_report(df)
+    # remove 'website' from the report as it's not a critical field and often legitimately missing
+    dq = dq[dq["field"] != "website"]
 
     col1, col2 = st.columns([2, 1])
     with col1:

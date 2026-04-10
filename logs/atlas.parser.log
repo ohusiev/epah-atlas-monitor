@@ -1727,3 +1727,752 @@ requests.exceptions.ConnectionError: HTTPSConnectionPool(host='energy-poverty.ec
 2026-03-22 13:52:12,580 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229865
 2026-03-22 13:52:17,071 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229865 | status=200 | duration=4.49s
 2026-03-22 13:52:22,190 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229863
+2026-03-22 15:56:51,927 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229863
+2026-03-22 15:56:59,542 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229863 | status=200 | duration=7.62s
+2026-03-22 15:57:11,672 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229862
+2026-03-22 15:57:20,173 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229862 | status=200 | duration=8.50s
+2026-03-22 15:57:33,331 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229861
+2026-03-22 15:57:44,786 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229861 | status=200 | duration=11.45s
+2026-03-22 15:57:49,986 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229860
+2026-03-22 15:57:55,541 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229860 | status=200 | duration=5.56s
+2026-03-22 15:58:02,741 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229859
+2026-03-22 15:58:09,251 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229859 | status=200 | duration=6.51s
+2026-03-22 15:58:13,401 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229858
+2026-03-22 15:59:50,556 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229858
+2026-03-22 15:59:59,133 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229858 | status=200 | duration=8.58s
+2026-03-22 16:00:09,424 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229857
+2026-03-22 16:00:15,933 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229857 | status=200 | duration=6.51s
+2026-03-22 16:00:20,105 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229856
+2026-03-22 16:00:28,521 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229856 | status=200 | duration=8.42s
+2026-03-22 16:00:38,670 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229855
+2026-03-22 16:00:50,118 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229855 | status=200 | duration=11.45s
+2026-03-22 16:01:03,340 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229555
+2026-03-22 16:03:23,102 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229555
+2026-03-22 16:03:27,538 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229555 | status=200 | duration=4.44s
+2026-03-22 16:03:34,736 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229538
+2026-03-22 16:03:45,265 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229538 | status=200 | duration=10.53s
+2026-03-22 16:04:00,554 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229528
+2026-03-22 16:04:10,124 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229528 | status=200 | duration=9.57s
+2026-03-22 16:13:23,016 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229528
+2026-03-22 16:13:31,485 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229528 | status=200 | duration=8.47s
+2026-03-22 16:13:37,643 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229380
+2026-03-22 16:13:46,000 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229380 | status=200 | duration=8.36s
+2026-03-22 16:13:51,167 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229249
+2026-03-22 16:14:02,038 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229249 | status=200 | duration=10.87s
+2026-03-22 16:14:06,342 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/223818
+2026-03-22 16:14:11,981 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/223818 | status=200 | duration=5.64s
+2026-03-22 16:14:17,220 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219735
+2026-03-22 16:18:04,699 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219735
+2026-03-22 16:18:16,222 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219735 | status=200 | duration=11.52s
+2026-03-22 16:18:22,466 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219610
+2026-03-22 16:18:30,842 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219610 | status=200 | duration=8.38s
+2026-03-22 16:25:48,770 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219610
+2026-03-22 16:25:55,150 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219610 | status=200 | duration=6.38s
+2026-03-22 16:26:07,227 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219609
+2026-03-22 16:26:12,971 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219609 | status=200 | duration=5.74s
+2026-03-22 16:27:50,483 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219609
+2026-03-22 16:28:02,918 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219609 | status=200 | duration=12.43s
+2026-04-03 10:56:27,438 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+2026-04-03 10:56:35,550 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas | status=200 | duration=8.11s
+2026-04-03 10:56:35,624 | INFO | atlas.parser | extract_last_page_number() detected last page number 14 at 2026-04-03T10:56:35
+2026-04-03 10:56:35,625 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0
+2026-04-03 10:56:48,447 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0 | status=200 | duration=12.82s
+2026-04-03 10:56:48,523 | INFO | atlas.parser | extract_projects() found 25 projects on list page 0
+2026-04-03 10:56:58,524 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1
+2026-04-03 10:57:06,107 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=1 | status=200 | duration=7.58s
+2026-04-03 10:57:06,189 | INFO | atlas.parser | extract_projects() found 25 projects on list page 1
+2026-04-03 10:57:27,191 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2
+2026-04-03 10:57:31,705 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=2 | status=200 | duration=4.51s
+2026-04-03 10:57:31,790 | INFO | atlas.parser | extract_projects() found 25 projects on list page 2
+2026-04-03 10:57:49,791 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3
+2026-04-03 10:58:03,328 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=3 | status=200 | duration=13.54s
+2026-04-03 10:58:03,428 | INFO | atlas.parser | extract_projects() found 25 projects on list page 3
+2026-04-03 10:58:21,429 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4
+2026-04-03 10:58:28,968 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=4 | status=200 | duration=7.54s
+2026-04-03 10:58:29,073 | INFO | atlas.parser | extract_projects() found 25 projects on list page 4
+2026-04-03 10:58:34,083 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5
+2026-04-03 10:58:43,659 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=5 | status=200 | duration=9.58s
+2026-04-03 10:58:43,749 | INFO | atlas.parser | extract_projects() found 25 projects on list page 5
+2026-04-03 10:58:49,760 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6
+2026-04-03 10:59:01,615 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=6 | status=200 | duration=11.86s
+2026-04-03 10:59:01,764 | INFO | atlas.parser | extract_projects() found 25 projects on list page 6
+2026-04-03 10:59:23,765 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7
+2026-04-03 10:59:31,340 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=7 | status=200 | duration=7.58s
+2026-04-03 10:59:31,539 | INFO | atlas.parser | extract_projects() found 25 projects on list page 7
+2026-04-03 10:59:53,540 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8
+2026-04-03 11:00:02,133 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=8 | status=200 | duration=8.59s
+2026-04-03 11:00:02,225 | INFO | atlas.parser | extract_projects() found 25 projects on list page 8
+2026-04-03 11:00:22,226 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9
+2026-04-03 11:00:26,817 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=9 | status=200 | duration=4.59s
+2026-04-03 11:00:26,902 | INFO | atlas.parser | extract_projects() found 25 projects on list page 9
+2026-04-03 11:00:37,908 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10
+2026-04-03 11:00:46,341 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=10 | status=200 | duration=8.43s
+2026-04-03 11:00:46,459 | INFO | atlas.parser | extract_projects() found 25 projects on list page 10
+2026-04-03 11:00:52,460 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11
+2026-04-03 11:01:04,996 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=11 | status=200 | duration=12.54s
+2026-04-03 11:01:05,103 | INFO | atlas.parser | extract_projects() found 25 projects on list page 11
+2026-04-03 11:01:27,104 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12
+2026-04-03 11:01:35,641 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=12 | status=200 | duration=8.54s
+2026-04-03 11:01:35,735 | INFO | atlas.parser | extract_projects() found 25 projects on list page 12
+2026-04-03 11:01:53,736 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13
+2026-04-03 11:01:59,239 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=13 | status=200 | duration=5.50s
+2026-04-03 11:01:59,310 | INFO | atlas.parser | extract_projects() found 15 projects on list page 13
+2026-04-03 11:02:19,323 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14
+2026-04-03 11:02:24,886 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=14 | status=200 | duration=5.56s
+2026-04-03 11:02:24,951 | INFO | atlas.parser | extract_projects() found 0 projects on list page 14
+2026-04-03 11:02:36,953 | INFO | atlas.parser | Completed parsing. Total projects found: 340
+2026-04-03 11:02:36,960 | INFO | atlas.parser | Saved parsed projects to: C:\Users\Oleksandr-MSI\Documentos\GitHub\epah-atlas-monitor\data\raw\epah_list_atlas_projects_20260403T090236Z.json
+2026-04-03 11:11:07,521 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas
+2026-04-03 11:11:17,273 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas | status=200 | duration=9.75s
+2026-04-03 11:11:17,368 | INFO | atlas.parser | extract_last_page_number() detected last page number 14 at 2026-04-03T11:11:17
+2026-04-03 11:11:17,369 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0
+2026-04-03 11:11:28,033 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/discover-community/epah-atlas?page=0 | status=200 | duration=10.66s
+2026-04-03 11:11:28,118 | INFO | atlas.parser | extract_projects() found 25 projects on list page 0
+2026-04-03 11:12:58,409 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219609
+2026-04-03 11:13:06,857 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219609 | status=200 | duration=8.45s
+2026-04-03 11:13:19,003 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219608
+2026-04-03 11:13:28,532 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219608 | status=200 | duration=9.53s
+2026-04-03 11:13:32,686 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219606
+2026-04-03 11:13:44,170 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219606 | status=200 | duration=11.48s
+2026-04-03 11:13:49,419 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219605
+2026-04-03 11:13:56,997 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219605 | status=200 | duration=7.58s
+2026-04-03 11:14:13,214 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219604
+2026-04-03 11:14:22,704 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219604 | status=200 | duration=9.49s
+2026-04-03 11:14:34,831 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219603
+2026-04-03 11:14:46,304 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219603 | status=200 | duration=11.47s
+2026-04-03 11:14:58,464 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219602
+2026-04-03 11:15:03,933 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219602 | status=200 | duration=5.47s
+2026-04-03 11:15:10,065 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219601
+2026-04-03 11:15:18,562 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219601 | status=200 | duration=8.50s
+2026-04-03 11:15:34,710 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219600
+2026-04-03 11:15:45,189 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219600 | status=200 | duration=10.48s
+2026-04-03 11:15:55,325 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219599
+2026-04-03 11:16:03,825 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219599 | status=200 | duration=8.50s
+2026-04-03 11:16:13,985 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219598
+2026-04-03 11:16:26,482 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219598 | status=200 | duration=12.50s
+2026-04-03 11:16:32,637 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219597
+2026-04-03 11:16:44,065 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219597 | status=200 | duration=11.43s
+2026-04-03 11:16:51,202 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219596
+2026-04-03 11:16:59,718 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219596 | status=200 | duration=8.52s
+2026-04-03 11:17:12,924 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219595
+2026-04-03 11:17:25,354 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219595 | status=200 | duration=12.43s
+2026-04-03 11:17:36,554 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219594
+2026-04-03 11:17:44,082 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219594 | status=200 | duration=7.53s
+2026-04-03 11:17:54,207 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219593
+2026-04-03 11:18:04,692 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219593 | status=200 | duration=10.48s
+2026-04-03 11:18:14,822 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219592
+2026-04-03 11:18:24,299 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219592 | status=200 | duration=9.48s
+2026-04-03 11:18:39,425 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219591
+2026-04-03 11:18:45,885 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219591 | status=200 | duration=6.46s
+2026-04-03 11:19:01,009 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219590
+2026-04-03 11:19:12,524 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219590 | status=200 | duration=11.52s
+2026-04-03 11:19:16,859 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219589
+2026-04-03 11:19:27,322 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219589 | status=200 | duration=10.46s
+2026-04-03 11:19:32,521 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219588
+2026-04-03 11:19:42,854 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219588 | status=200 | duration=10.33s
+2026-04-03 11:19:49,989 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219587
+2026-04-03 11:19:56,468 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219587 | status=200 | duration=6.48s
+2026-04-03 11:20:04,904 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219586
+2026-04-03 11:20:11,423 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219586 | status=200 | duration=6.52s
+2026-04-03 11:20:27,687 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219585
+2026-04-03 11:20:35,583 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219585 | status=200 | duration=7.90s
+2026-04-03 11:20:51,691 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219584
+2026-04-03 11:20:56,175 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219584 | status=200 | duration=4.48s
+2026-04-03 11:21:00,296 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219583
+2026-04-03 11:21:12,603 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219583 | status=200 | duration=12.31s
+2026-04-03 11:21:21,914 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219582
+2026-04-03 11:21:23,311 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219582
+2026-04-03 11:21:27,534 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219582 | status=200 | duration=4.22s
+2026-04-03 11:21:30,882 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219582 | status=200 | duration=8.97s
+2026-04-03 11:21:35,072 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219581
+2026-04-03 11:21:37,666 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219581
+2026-04-03 11:21:43,570 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219581 | status=200 | duration=8.50s
+2026-04-03 11:21:48,719 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219581 | status=200 | duration=11.05s
+2026-04-03 11:21:57,762 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219580
+2026-04-03 11:22:10,298 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219580 | status=200 | duration=12.54s
+2026-04-03 11:22:25,449 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219579
+2026-04-03 11:22:33,917 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219579 | status=200 | duration=8.47s
+2026-04-03 11:22:50,059 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219578
+2026-04-03 11:23:01,636 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219578 | status=200 | duration=11.58s
+2026-04-03 11:23:05,791 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219577
+2026-04-03 11:23:10,284 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219577 | status=200 | duration=4.49s
+2026-04-03 11:23:24,049 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219577
+2026-04-03 11:23:24,981 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219577
+2026-04-03 11:23:26,453 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219576
+2026-04-03 11:23:34,884 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219576 | status=200 | duration=8.43s
+2026-04-03 11:23:47,019 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219575
+2026-04-03 11:23:55,551 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219575 | status=200 | duration=8.53s
+2026-04-03 11:24:00,774 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219574
+2026-04-03 11:24:05,284 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219574 | status=200 | duration=4.51s
+2026-04-03 11:24:10,474 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219573
+2026-04-03 11:24:22,912 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219573 | status=200 | duration=12.44s
+2026-04-03 11:24:32,102 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219572
+2026-04-03 11:24:43,537 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219572 | status=200 | duration=11.43s
+2026-04-03 11:24:47,687 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219571
+2026-04-03 11:24:54,184 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219571 | status=200 | duration=6.50s
+2026-04-03 11:25:09,347 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219570
+2026-04-03 11:25:14,817 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219570 | status=200 | duration=5.47s
+2026-04-03 11:25:25,989 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219569
+2026-04-03 11:25:38,479 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219569 | status=200 | duration=12.49s
+2026-04-03 11:25:42,623 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219568
+2026-04-03 11:25:51,077 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219568 | status=200 | duration=8.45s
+2026-04-03 11:26:07,316 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219567
+2026-04-03 11:26:17,223 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219567 | status=200 | duration=9.91s
+2026-04-03 11:26:24,394 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219566
+2026-04-03 11:26:28,554 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219566 | status=200 | duration=4.16s
+2026-04-03 11:26:41,791 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219565
+2026-04-03 11:26:50,275 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219565 | status=200 | duration=8.48s
+2026-04-03 11:27:05,565 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219564
+2026-04-03 11:27:11,062 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219564 | status=200 | duration=5.50s
+2026-04-03 11:27:23,228 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219563
+2026-04-03 11:27:31,698 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219563 | status=200 | duration=8.47s
+2026-04-03 11:27:43,905 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219562
+2026-04-03 11:27:55,233 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219562 | status=200 | duration=11.33s
+2026-04-03 11:28:03,356 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219561
+2026-04-03 11:28:14,808 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219561 | status=200 | duration=11.45s
+2026-04-03 11:28:30,976 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219560
+2026-04-03 11:28:39,425 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219560 | status=200 | duration=8.45s
+2026-04-03 11:28:53,608 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219559
+2026-04-03 11:28:59,089 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219559 | status=200 | duration=5.48s
+2026-04-03 11:29:05,214 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219558
+2026-04-03 11:29:13,732 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219558 | status=200 | duration=8.52s
+2026-04-03 11:29:19,856 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219557
+2026-04-03 11:29:29,370 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219557 | status=200 | duration=9.51s
+2026-04-03 11:29:34,582 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219556
+2026-04-03 11:29:40,049 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219556 | status=200 | duration=5.47s
+2026-04-03 11:29:49,183 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219555
+2026-04-03 11:29:55,645 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219555 | status=200 | duration=6.46s
+2026-04-03 11:30:02,815 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219554
+2026-04-03 11:30:07,265 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219554 | status=200 | duration=4.45s
+2026-04-03 11:30:23,509 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219553
+2026-04-03 11:30:32,016 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219553 | status=200 | duration=8.51s
+2026-04-03 11:30:47,157 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219552
+2026-04-03 11:30:58,561 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219552 | status=200 | duration=11.40s
+2026-04-03 11:31:13,703 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219551
+2026-04-03 11:31:22,248 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219551 | status=200 | duration=8.54s
+2026-04-03 11:31:33,396 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219550
+2026-04-03 11:31:44,834 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219550 | status=200 | duration=11.44s
+2026-04-03 11:31:57,969 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219549
+2026-04-03 11:32:07,379 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219549 | status=200 | duration=9.41s
+2026-04-03 11:32:18,645 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219548
+2026-04-03 11:32:24,091 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219548 | status=200 | duration=5.45s
+2026-04-03 11:32:29,252 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219547
+2026-04-03 11:32:35,717 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219547 | status=200 | duration=6.47s
+2026-04-03 11:32:45,883 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219546
+2026-04-03 11:32:51,336 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219546 | status=200 | duration=5.45s
+2026-04-03 11:33:05,521 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219545
+2026-04-03 11:33:10,093 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219545 | status=200 | duration=4.57s
+2026-04-03 11:33:17,482 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219544
+2026-04-03 11:33:21,979 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219544 | status=200 | duration=4.50s
+2026-04-03 11:33:28,239 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219543
+2026-04-03 11:33:35,706 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219543 | status=200 | duration=7.47s
+2026-04-03 11:33:40,883 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219542
+2026-04-03 11:33:52,328 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219542 | status=200 | duration=11.44s
+2026-04-03 11:33:58,466 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219541
+2026-04-03 11:34:08,903 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219541 | status=200 | duration=10.44s
+2026-04-03 11:34:21,050 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219540
+2026-04-03 11:34:33,566 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219540 | status=200 | duration=12.52s
+2026-04-03 11:34:43,766 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219539
+2026-04-03 11:34:56,213 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219539 | status=200 | duration=12.45s
+2026-04-03 11:35:11,467 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219538
+2026-04-03 11:35:20,919 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219538 | status=200 | duration=9.45s
+2026-04-03 11:35:37,103 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219537
+2026-04-03 11:35:43,516 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219537 | status=200 | duration=6.41s
+2026-04-03 11:35:58,687 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219536
+2026-04-03 11:36:05,317 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219536 | status=200 | duration=6.63s
+2026-04-03 11:36:10,492 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219535
+2026-04-03 11:36:17,972 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219535 | status=200 | duration=7.48s
+2026-04-03 11:36:32,099 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219534
+2026-04-03 11:36:41,549 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219534 | status=200 | duration=9.45s
+2026-04-03 11:36:51,678 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219533
+2026-04-03 11:37:02,139 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219533 | status=200 | duration=10.46s
+2026-04-03 11:37:07,322 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219532
+2026-04-03 11:37:11,769 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219532 | status=200 | duration=4.45s
+2026-04-03 11:37:27,895 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219531
+2026-04-03 11:37:32,413 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219531 | status=200 | duration=4.52s
+2026-04-03 11:37:38,554 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219530
+2026-04-03 11:37:46,013 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219530 | status=200 | duration=7.46s
+2026-04-03 11:37:55,148 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219529
+2026-04-03 11:38:06,574 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219529 | status=200 | duration=11.43s
+2026-04-03 11:38:12,701 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219528
+2026-04-03 11:38:24,189 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219528 | status=200 | duration=11.49s
+2026-04-03 11:38:39,305 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219527
+2026-04-03 11:38:43,795 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219527 | status=200 | duration=4.49s
+2026-04-03 11:38:53,976 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219526
+2026-04-03 11:39:01,468 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219526 | status=200 | duration=7.49s
+2026-04-03 11:39:14,635 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219525
+2026-04-03 11:39:27,131 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219525 | status=200 | duration=12.50s
+2026-04-03 11:39:40,314 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219524
+2026-04-03 11:39:52,773 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219524 | status=200 | duration=12.46s
+2026-04-03 11:40:02,926 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219523
+2026-04-03 11:40:14,362 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219523 | status=200 | duration=11.44s
+2026-04-03 11:40:18,471 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219522
+2026-04-03 11:40:22,930 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219522 | status=200 | duration=4.46s
+2026-04-03 11:40:38,090 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219521
+2026-04-03 11:40:47,514 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219521 | status=200 | duration=9.42s
+2026-04-03 11:40:52,729 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219520
+2026-04-03 11:41:02,225 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219520 | status=200 | duration=9.50s
+2026-04-03 11:41:06,367 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219519
+2026-04-03 11:41:18,828 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219519 | status=200 | duration=12.46s
+2026-04-03 11:41:26,954 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219513
+2026-04-03 11:41:34,483 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219513 | status=200 | duration=7.53s
+2026-04-03 11:41:41,641 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219512
+2026-04-03 11:41:52,131 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219512 | status=200 | duration=10.49s
+2026-04-03 11:42:08,248 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219510
+2026-04-03 11:42:12,703 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219510 | status=200 | duration=4.46s
+2026-04-03 11:42:22,885 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219509
+2026-04-03 11:42:31,369 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219509 | status=200 | duration=8.48s
+2026-04-03 11:42:42,559 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219508
+2026-04-03 11:42:52,999 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219508 | status=200 | duration=10.44s
+2026-04-03 11:43:00,139 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219471
+2026-04-03 11:43:08,583 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219471 | status=200 | duration=8.44s
+2026-04-03 11:43:15,744 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219442
+2026-04-03 11:43:23,881 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219442 | status=200 | duration=8.14s
+2026-04-03 11:43:36,014 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219432
+2026-04-03 11:43:47,510 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219432 | status=200 | duration=11.50s
+2026-04-03 11:44:01,701 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219423
+2026-04-03 11:44:13,006 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219423 | status=200 | duration=11.30s
+2026-04-03 11:44:29,241 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217252
+2026-04-03 11:44:36,772 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217252 | status=200 | duration=7.53s
+2026-04-03 11:44:47,909 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217232
+2026-04-03 11:44:55,404 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217232 | status=200 | duration=7.49s
+2026-04-03 11:45:08,618 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217250
+2026-04-03 11:45:13,164 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217250 | status=200 | duration=4.55s
+2026-04-03 11:45:29,302 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217249
+2026-04-03 11:45:36,836 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217249 | status=200 | duration=7.53s
+2026-04-03 11:45:52,042 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217248
+2026-04-03 11:45:59,539 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217248 | status=200 | duration=7.50s
+2026-04-03 11:46:10,706 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217247
+2026-04-03 11:46:22,261 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217247 | status=200 | duration=11.55s
+2026-04-03 11:46:36,457 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217246
+2026-04-03 11:46:46,012 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217246 | status=200 | duration=9.55s
+2026-04-03 11:47:00,164 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217245
+2026-04-03 11:47:06,680 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217245 | status=200 | duration=6.52s
+2026-04-03 11:47:11,817 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217244
+2026-04-03 11:47:21,333 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217244 | status=200 | duration=9.52s
+2026-04-03 11:47:37,489 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217243
+2026-04-03 11:47:50,002 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217243 | status=200 | duration=12.51s
+2026-04-03 11:48:05,153 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217236
+2026-04-03 11:48:09,613 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217236 | status=200 | duration=4.46s
+2026-04-03 11:48:20,767 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217230
+2026-04-03 11:48:29,311 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217230 | status=200 | duration=8.54s
+2026-04-03 11:48:37,450 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217233
+2026-04-03 11:48:42,910 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217233 | status=200 | duration=5.46s
+2026-04-03 11:48:53,023 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217234
+2026-04-03 11:49:00,563 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217234 | status=200 | duration=7.54s
+2026-04-03 11:49:06,699 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217235
+2026-04-03 11:49:11,253 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217235 | status=200 | duration=4.55s
+2026-04-03 11:49:17,395 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217239
+2026-04-03 11:49:22,921 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217239 | status=200 | duration=5.53s
+2026-04-03 11:49:39,041 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217241
+2026-04-03 11:49:49,540 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217241 | status=200 | duration=10.50s
+2026-04-03 11:49:58,696 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217240
+2026-04-03 11:50:07,181 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217240 | status=200 | duration=8.49s
+2026-04-03 11:50:16,312 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217242
+2026-04-03 11:50:24,651 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217242 | status=200 | duration=8.34s
+2026-04-03 11:50:40,756 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217237
+2026-04-03 11:50:51,251 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217237 | status=200 | duration=10.50s
+2026-04-03 11:51:07,380 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217253
+2026-04-03 11:51:15,878 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217253 | status=200 | duration=8.50s
+2026-04-03 11:51:27,006 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217254
+2026-04-03 11:51:33,450 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217254 | status=200 | duration=6.44s
+2026-04-03 11:51:42,566 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217255
+2026-04-03 11:51:47,066 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217255 | status=200 | duration=4.50s
+2026-04-03 11:51:51,209 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217256
+2026-04-03 11:52:00,739 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217256 | status=200 | duration=9.53s
+2026-04-03 11:52:11,864 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217257
+2026-04-03 11:52:23,271 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217257 | status=200 | duration=11.41s
+2026-04-03 11:52:27,393 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217258
+2026-04-03 11:52:34,931 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217258 | status=200 | duration=7.54s
+2026-04-03 11:52:46,051 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217259
+2026-04-03 11:52:54,541 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217259 | status=200 | duration=8.49s
+2026-04-03 11:53:08,685 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217260
+2026-04-03 11:53:18,141 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217260 | status=200 | duration=9.46s
+2026-04-03 11:53:24,303 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217261
+2026-04-03 11:53:34,799 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217261 | status=200 | duration=10.50s
+2026-04-03 11:53:47,934 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217262
+2026-04-03 11:53:58,410 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217262 | status=200 | duration=10.48s
+2026-04-03 11:54:13,637 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217263
+2026-04-03 11:54:25,959 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217263 | status=200 | duration=12.32s
+2026-04-03 11:54:32,091 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217264
+2026-04-03 11:54:39,579 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217264 | status=200 | duration=7.49s
+2026-04-03 11:54:46,699 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217265
+2026-04-03 11:54:52,233 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217265 | status=200 | duration=5.53s
+2026-04-03 11:55:06,389 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217266
+2026-04-03 11:55:18,867 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217266 | status=200 | duration=12.48s
+2026-04-03 11:55:34,997 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217267
+2026-04-03 11:55:47,413 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217267 | status=200 | duration=12.42s
+2026-04-03 11:55:53,552 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217268
+2026-04-03 11:56:00,074 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217268 | status=200 | duration=6.52s
+2026-04-03 11:56:06,276 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217269
+2026-04-03 11:56:14,714 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217269 | status=200 | duration=8.44s
+2026-04-03 11:56:22,840 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217270
+2026-04-03 11:56:28,964 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217270 | status=200 | duration=6.12s
+2026-04-03 11:56:43,163 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217271
+2026-04-03 11:56:50,680 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217271 | status=200 | duration=7.52s
+2026-04-03 11:56:54,854 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217272
+2026-04-03 11:57:07,344 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217272 | status=200 | duration=12.49s
+2026-04-03 11:57:12,490 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217184
+2026-04-03 11:57:19,652 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217184 | status=200 | duration=7.16s
+2026-04-03 11:57:25,774 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217185
+2026-04-03 11:57:35,299 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217185 | status=200 | duration=9.52s
+2026-04-03 11:57:48,417 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217186
+2026-04-03 11:57:54,966 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217186 | status=200 | duration=6.55s
+2026-04-03 11:58:01,154 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217187
+2026-04-03 11:58:13,628 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217187 | status=200 | duration=12.47s
+2026-04-03 11:58:24,792 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217188
+2026-04-03 11:58:30,205 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217188 | status=200 | duration=5.41s
+2026-04-03 11:58:35,334 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217189
+2026-04-03 11:58:44,756 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217189 | status=200 | duration=9.42s
+2026-04-03 11:58:53,859 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217190
+2026-04-03 11:59:06,341 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217190 | status=200 | duration=12.48s
+2026-04-03 11:59:21,482 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217191
+2026-04-03 11:59:32,949 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217191 | status=200 | duration=11.47s
+2026-04-03 11:59:43,108 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217192
+2026-04-03 11:59:53,565 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217192 | status=200 | duration=10.46s
+2026-04-03 12:00:03,683 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217193
+2026-04-03 12:00:13,182 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217193 | status=200 | duration=9.50s
+2026-04-03 12:00:17,342 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217194
+2026-04-03 12:00:26,849 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217194 | status=200 | duration=9.51s
+2026-04-03 12:00:31,983 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217195
+2026-04-03 12:00:36,436 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217195 | status=200 | duration=4.45s
+2026-04-03 12:00:44,585 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217196
+2026-04-03 12:00:51,067 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217196 | status=200 | duration=6.48s
+2026-04-03 12:00:55,198 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217197
+2026-04-03 12:01:01,721 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217197 | status=200 | duration=6.52s
+2026-04-03 12:01:05,864 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217198
+2026-04-03 12:01:16,312 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217198 | status=200 | duration=10.45s
+2026-04-03 12:01:25,431 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217199
+2026-04-03 12:01:35,920 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217199 | status=200 | duration=10.49s
+2026-04-03 12:01:51,138 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217200
+2026-04-03 12:02:03,664 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217200 | status=200 | duration=12.53s
+2026-04-03 12:02:19,802 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217201
+2026-04-03 12:02:32,235 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217201 | status=200 | duration=12.43s
+2026-04-03 12:02:47,362 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217202
+2026-04-03 12:02:59,845 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217202 | status=200 | duration=12.48s
+2026-04-03 12:03:06,959 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217203
+2026-04-03 12:03:13,630 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217203 | status=200 | duration=6.67s
+2026-04-03 12:03:28,769 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217204
+2026-04-03 12:03:34,318 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217204 | status=200 | duration=5.55s
+2026-04-03 12:03:45,485 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217205
+2026-04-03 12:03:54,904 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217205 | status=200 | duration=9.42s
+2026-04-03 12:04:06,047 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217206
+2026-04-03 12:04:13,518 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217206 | status=200 | duration=7.47s
+2026-04-03 12:04:20,633 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217207
+2026-04-03 12:04:26,317 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217207 | status=200 | duration=5.68s
+2026-04-03 12:04:41,463 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217208
+2026-04-03 12:04:48,979 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217208 | status=200 | duration=7.52s
+2026-04-03 12:05:01,154 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217209
+2026-04-03 12:05:07,738 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217209 | status=200 | duration=6.58s
+2026-04-03 12:05:20,870 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/217210
+2026-04-03 12:05:26,420 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/217210 | status=200 | duration=5.55s
+2026-04-03 12:05:39,551 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212327
+2026-04-03 12:05:51,235 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212327 | status=200 | duration=11.68s
+2026-04-03 12:06:04,391 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212328
+2026-04-03 12:06:09,884 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212328 | status=200 | duration=5.49s
+2026-04-03 12:06:14,068 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212329
+2026-04-03 12:06:19,611 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212329 | status=200 | duration=5.54s
+2026-04-03 12:06:33,825 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212330
+2026-04-03 12:06:42,520 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212330 | status=200 | duration=8.70s
+2026-04-03 12:06:55,649 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212331
+2026-04-03 12:07:05,187 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212331 | status=200 | duration=9.54s
+2026-04-03 12:07:19,372 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212332
+2026-04-03 12:07:26,711 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212332 | status=200 | duration=7.34s
+2026-04-03 12:07:36,869 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212333
+2026-04-03 12:07:42,316 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212333 | status=200 | duration=5.45s
+2026-04-03 12:07:55,448 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212334
+2026-04-03 12:08:06,253 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212334 | status=200 | duration=10.81s
+2026-04-03 12:08:15,432 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212335
+2026-04-03 12:08:23,905 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212335 | status=200 | duration=8.47s
+2026-04-03 12:08:32,069 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212336
+2026-04-03 12:08:43,775 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212336 | status=200 | duration=11.71s
+2026-04-03 12:08:58,934 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212337
+2026-04-03 12:09:03,516 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212337 | status=200 | duration=4.58s
+2026-04-03 12:09:12,679 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212338
+2026-04-03 12:09:25,167 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212338 | status=200 | duration=12.49s
+2026-04-03 12:09:38,347 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212339
+2026-04-03 12:09:44,964 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212339 | status=200 | duration=6.62s
+2026-04-03 12:09:55,149 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212340
+2026-04-03 12:09:59,299 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212340 | status=200 | duration=4.15s
+2026-04-03 12:10:09,489 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212341
+2026-04-03 12:10:21,953 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212341 | status=200 | duration=12.46s
+2026-04-03 12:10:31,128 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212342
+2026-04-03 12:10:36,709 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212342 | status=200 | duration=5.58s
+2026-04-03 12:10:42,882 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212343
+2026-04-03 12:10:54,434 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212343 | status=200 | duration=11.55s
+2026-04-03 12:11:01,563 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212344
+2026-04-03 12:11:12,198 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212344 | status=200 | duration=10.64s
+2026-04-03 12:11:18,336 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212345
+2026-04-03 12:11:23,904 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212345 | status=200 | duration=5.57s
+2026-04-03 12:11:39,048 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212346
+2026-04-03 12:11:43,659 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212346 | status=200 | duration=4.61s
+2026-04-03 12:11:57,826 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212347
+2026-04-03 12:12:07,362 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212347 | status=200 | duration=9.54s
+2026-04-03 12:12:22,605 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212348
+2026-04-03 12:12:30,171 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212348 | status=200 | duration=7.57s
+2026-04-03 12:12:39,341 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212349
+2026-04-03 12:12:47,628 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212349 | status=200 | duration=8.29s
+2026-04-03 12:13:02,768 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212350
+2026-04-03 12:13:07,356 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212350 | status=200 | duration=4.59s
+2026-04-03 12:13:17,528 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212351
+2026-04-03 12:13:26,664 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212351 | status=200 | duration=9.14s
+2026-04-03 12:13:38,801 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212352
+2026-04-03 12:13:48,002 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212352 | status=200 | duration=9.20s
+2026-04-03 12:14:02,210 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212353
+2026-04-03 12:14:12,653 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212353 | status=200 | duration=10.44s
+2026-04-03 12:14:24,769 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212354
+2026-04-03 12:14:31,258 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212354 | status=200 | duration=6.49s
+2026-04-03 12:14:43,369 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212355
+2026-04-03 12:14:49,907 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212355 | status=200 | duration=6.54s
+2026-04-03 12:15:06,042 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212356
+2026-04-03 12:15:12,534 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212356 | status=200 | duration=6.49s
+2026-04-03 12:15:17,695 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212357
+2026-04-03 12:15:22,400 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212357 | status=200 | duration=4.70s
+2026-04-03 12:15:29,538 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212358
+2026-04-03 12:15:36,047 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212358 | status=200 | duration=6.51s
+2026-04-03 12:15:42,168 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212359
+2026-04-03 12:15:53,651 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212359 | status=200 | duration=11.48s
+2026-04-03 12:15:59,778 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212360
+2026-04-03 12:16:06,278 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212360 | status=200 | duration=6.50s
+2026-04-03 12:16:20,464 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212361
+2026-04-03 12:16:29,883 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212361 | status=200 | duration=9.42s
+2026-04-03 12:16:46,029 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212362
+2026-04-03 12:16:56,563 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212362 | status=200 | duration=10.53s
+2026-04-03 12:17:02,757 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212363
+2026-04-03 12:17:12,295 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212363 | status=200 | duration=9.54s
+2026-04-03 12:17:22,443 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212364
+2026-04-03 12:17:35,051 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212364 | status=200 | duration=12.61s
+2026-04-03 12:17:41,291 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212365
+2026-04-03 12:17:49,630 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212365 | status=200 | duration=8.34s
+2026-04-03 12:18:01,783 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212366
+2026-04-03 12:18:08,343 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212366 | status=200 | duration=6.56s
+2026-04-03 12:18:13,510 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212367
+2026-04-03 12:18:18,641 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212367 | status=200 | duration=5.13s
+2026-04-03 12:18:32,855 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212368
+2026-04-03 12:18:40,324 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212368 | status=200 | duration=7.47s
+2026-04-03 12:18:52,482 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212370
+2026-04-03 12:18:57,962 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212370 | status=200 | duration=5.48s
+2026-04-03 12:19:03,121 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212371
+2026-04-03 12:19:15,259 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212371 | status=200 | duration=12.14s
+2026-04-03 12:19:26,395 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212372
+2026-04-03 12:19:33,946 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212372 | status=200 | duration=7.55s
+2026-04-03 12:19:44,074 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212373
+2026-04-03 12:19:53,554 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212373 | status=200 | duration=9.48s
+2026-04-03 12:20:07,700 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212374
+2026-04-03 12:20:20,265 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212374 | status=200 | duration=12.57s
+2026-04-03 12:20:27,437 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212375
+2026-04-03 12:20:33,005 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212375 | status=200 | duration=5.57s
+2026-04-03 12:20:48,134 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212376
+2026-04-03 12:20:55,696 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212376 | status=200 | duration=7.56s
+2026-04-03 12:20:59,895 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212377
+2026-04-03 12:21:11,390 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212377 | status=200 | duration=11.49s
+2026-04-03 12:21:17,524 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212378
+2026-04-03 12:21:22,017 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212378 | status=200 | duration=4.49s
+2026-04-03 12:21:27,156 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212379
+2026-04-03 12:21:34,697 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212379 | status=200 | duration=7.54s
+2026-04-03 12:21:45,841 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212380
+2026-04-03 12:21:58,333 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212380 | status=200 | duration=12.49s
+2026-04-03 12:22:02,473 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212381
+2026-04-03 12:22:14,611 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212381 | status=200 | duration=12.14s
+2026-04-03 12:22:26,735 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212382
+2026-04-03 12:22:34,279 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212382 | status=200 | duration=7.54s
+2026-04-03 12:22:46,424 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212383
+2026-04-03 12:22:57,783 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212383 | status=200 | duration=11.36s
+2026-04-03 12:23:13,909 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212384
+2026-04-03 12:23:24,439 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212384 | status=200 | duration=10.53s
+2026-04-03 12:23:30,576 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212385
+2026-04-03 12:23:38,000 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212385 | status=200 | duration=7.42s
+2026-04-03 12:23:43,122 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212386
+2026-04-03 12:23:53,695 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212386 | status=200 | duration=10.57s
+2026-04-03 12:24:02,894 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212387
+2026-04-03 12:24:10,322 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212387 | status=200 | duration=7.43s
+2026-04-03 12:24:17,494 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212388
+2026-04-03 12:24:23,932 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212388 | status=200 | duration=6.44s
+2026-04-03 12:24:29,048 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212389
+2026-04-03 12:24:37,626 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212389 | status=200 | duration=8.58s
+2026-04-03 12:24:41,759 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212390
+2026-04-03 12:24:52,144 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212390 | status=200 | duration=10.39s
+2026-04-03 12:24:57,324 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212391
+2026-04-03 12:25:01,758 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212391 | status=200 | duration=4.43s
+2026-04-03 12:25:11,885 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212392
+2026-04-03 12:25:24,509 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212392 | status=200 | duration=12.62s
+2026-04-03 12:25:33,632 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212393
+2026-04-03 12:25:37,954 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212393 | status=200 | duration=4.32s
+2026-04-03 12:25:47,180 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212394
+2026-04-03 12:25:53,658 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212394 | status=200 | duration=6.48s
+2026-04-03 12:26:01,794 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212395
+2026-04-03 12:26:07,079 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212395 | status=200 | duration=5.28s
+2026-04-03 12:26:11,270 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212396
+2026-04-03 12:26:17,728 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212396 | status=200 | duration=6.46s
+2026-04-03 12:26:28,853 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212397
+2026-04-03 12:26:38,912 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212397 | status=200 | duration=10.06s
+2026-04-03 12:26:51,046 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212398
+2026-04-03 12:26:58,351 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212398 | status=200 | duration=7.31s
+2026-04-03 12:27:07,478 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212399
+2026-04-03 12:27:20,032 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212399 | status=200 | duration=12.55s
+2026-04-03 12:27:32,228 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212400
+2026-04-03 12:27:40,975 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212400 | status=200 | duration=8.75s
+2026-04-03 12:27:49,166 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212401
+2026-04-03 12:27:54,848 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212401 | status=200 | duration=5.68s
+2026-04-03 12:28:03,975 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212402
+2026-04-03 12:28:08,630 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212402 | status=200 | duration=4.66s
+2026-04-03 12:28:18,770 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212403
+2026-04-03 12:28:29,346 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212403 | status=200 | duration=10.58s
+2026-04-03 12:28:43,488 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212404
+2026-04-03 12:28:53,125 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212404 | status=200 | duration=9.64s
+2026-04-03 12:29:08,247 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212405
+2026-04-03 12:29:19,761 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212405 | status=200 | duration=11.51s
+2026-04-03 12:29:26,953 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212406
+2026-04-03 12:29:35,801 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212406 | status=200 | duration=8.85s
+2026-04-03 12:29:50,947 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212407
+2026-04-03 12:30:00,512 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212407 | status=200 | duration=9.56s
+2026-04-03 12:30:06,652 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212408
+2026-04-03 12:30:19,261 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212408 | status=200 | duration=12.61s
+2026-04-03 12:30:32,396 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212409
+2026-04-03 12:30:43,899 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212409 | status=200 | duration=11.50s
+2026-04-03 12:30:58,096 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212410
+2026-04-03 12:31:05,779 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212410 | status=200 | duration=7.68s
+2026-04-03 12:31:13,921 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212411
+2026-04-03 12:31:25,463 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212411 | status=200 | duration=11.54s
+2026-04-03 12:31:32,610 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212412
+2026-04-03 12:31:39,742 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212412 | status=200 | duration=7.13s
+2026-04-03 12:31:50,874 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212413
+2026-04-03 12:31:59,548 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212413 | status=200 | duration=8.67s
+2026-04-03 12:32:09,760 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212414
+2026-04-03 12:32:21,250 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212414 | status=200 | duration=11.49s
+2026-04-03 12:32:31,501 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212415
+2026-04-03 12:32:42,119 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212415 | status=200 | duration=10.62s
+2026-04-03 12:32:46,251 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212416
+2026-04-03 12:32:51,758 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212416 | status=200 | duration=5.51s
+2026-04-03 12:33:04,929 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212417
+2026-04-03 12:33:11,460 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212417 | status=200 | duration=6.53s
+2026-04-03 12:33:27,622 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212418
+2026-04-03 12:33:39,259 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212418 | status=200 | duration=11.64s
+2026-04-03 12:33:43,473 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212419
+2026-04-03 12:33:48,035 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212419 | status=200 | duration=4.56s
+2026-04-03 12:34:03,234 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212420
+2026-04-03 12:34:11,768 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212420 | status=200 | duration=8.53s
+2026-04-03 12:34:15,900 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212421
+2026-04-03 12:34:26,463 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212421 | status=200 | duration=10.56s
+2026-04-03 12:34:30,670 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212422
+2026-04-03 12:34:38,205 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212422 | status=200 | duration=7.53s
+2026-04-03 12:34:53,334 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212423
+2026-04-03 12:35:01,710 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212423 | status=200 | duration=8.38s
+2026-04-03 12:35:09,846 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212424
+2026-04-03 12:35:14,355 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212424 | status=200 | duration=4.51s
+2026-04-03 12:35:26,489 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212425
+2026-04-03 12:35:30,822 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212425 | status=200 | duration=4.33s
+2026-04-03 12:35:44,972 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212426
+2026-04-03 12:35:51,443 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212426 | status=200 | duration=6.47s
+2026-04-03 12:36:02,645 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212427
+2026-04-03 12:36:15,170 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212427 | status=200 | duration=12.53s
+2026-04-03 12:36:28,308 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212428
+2026-04-03 12:36:38,844 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212428 | status=200 | duration=10.54s
+2026-04-03 12:36:49,985 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212429
+2026-04-03 12:37:01,305 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212429 | status=200 | duration=11.32s
+2026-04-03 12:37:10,463 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212430
+2026-04-03 12:37:15,103 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212430 | status=200 | duration=4.64s
+2026-04-03 12:37:22,385 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212431
+2026-04-03 12:37:32,884 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212431 | status=200 | duration=10.50s
+2026-04-03 12:37:41,011 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212432
+2026-04-03 12:37:46,589 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212432 | status=200 | duration=5.58s
+2026-04-03 12:38:02,748 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212433
+2026-04-03 12:38:13,062 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212433 | status=200 | duration=10.31s
+2026-04-03 12:38:23,237 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212434
+2026-04-03 12:38:34,759 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212434 | status=200 | duration=11.52s
+2026-04-03 12:38:41,878 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212435
+2026-04-03 12:38:51,917 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212435 | status=200 | duration=10.04s
+2026-04-03 12:38:59,060 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212436
+2026-04-03 12:39:09,563 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212436 | status=200 | duration=10.50s
+2026-04-03 12:39:24,720 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212437
+2026-04-03 12:39:34,241 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212437 | status=200 | duration=9.52s
+2026-04-03 12:39:44,387 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212438
+2026-04-03 12:39:52,885 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212438 | status=200 | duration=8.50s
+2026-04-03 12:40:01,061 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212439
+2026-04-03 12:40:13,571 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212439 | status=200 | duration=12.51s
+2026-04-03 12:40:22,765 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212440
+2026-04-03 12:40:32,101 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212440 | status=200 | duration=9.34s
+2026-04-03 12:40:45,298 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212441
+2026-04-03 12:40:50,638 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212441 | status=200 | duration=5.34s
+2026-04-03 12:40:54,832 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212442
+2026-04-03 12:41:10,339 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212442 | status=200 | duration=15.51s
+2026-04-03 12:41:20,529 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212443
+2026-04-03 12:41:27,126 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212443 | status=200 | duration=6.60s
+2026-04-03 12:41:41,275 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212444
+2026-04-03 12:41:52,736 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212444 | status=200 | duration=11.46s
+2026-04-03 12:42:06,975 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212445
+2026-04-03 12:42:19,537 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212445 | status=200 | duration=12.56s
+2026-04-03 12:42:33,768 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212446
+2026-04-03 12:42:46,299 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212446 | status=200 | duration=12.53s
+2026-04-03 12:43:02,458 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212447
+2026-04-03 12:43:06,916 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212447 | status=200 | duration=4.46s
+2026-04-03 12:43:15,064 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212448
+2026-04-03 12:43:20,253 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212448 | status=200 | duration=5.19s
+2026-04-03 12:43:36,396 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212449
+2026-04-03 12:43:46,919 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212449 | status=200 | duration=10.52s
+2026-04-03 12:43:56,105 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212450
+2026-04-03 12:44:02,728 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212450 | status=200 | duration=6.62s
+2026-04-03 12:44:08,945 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/212451
+2026-04-03 12:44:16,412 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/212451 | status=200 | duration=7.47s
+2026-04-03 19:30:39,627 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/231571
+2026-04-03 19:30:49,432 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/231571 | status=200 | duration=9.80s
+2026-04-03 19:31:04,535 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/230169
+2026-04-03 19:31:11,880 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/230169 | status=200 | duration=7.34s
+2026-04-03 19:31:16,981 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229997
+2026-04-03 19:31:27,508 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229997 | status=200 | duration=10.53s
+2026-04-03 19:31:34,617 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229995
+2026-04-03 19:31:39,016 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229995 | status=200 | duration=4.40s
+2026-04-03 19:31:54,110 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229994
+2026-04-03 19:32:00,646 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229994 | status=200 | duration=6.54s
+2026-04-03 19:32:05,733 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229993
+2026-04-03 19:32:13,134 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229993 | status=200 | duration=7.40s
+2026-04-03 19:32:28,232 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229992
+2026-04-03 19:32:34,821 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229992 | status=200 | duration=6.59s
+2026-04-03 19:32:40,913 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229991
+2026-04-03 19:32:51,398 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229991 | status=200 | duration=10.48s
+2026-04-03 19:33:03,490 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229889
+2026-04-03 19:33:08,048 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229889 | status=200 | duration=4.56s
+2026-04-03 19:33:17,145 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229876
+2026-04-03 19:33:26,736 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229876 | status=200 | duration=9.59s
+2026-04-03 19:33:31,838 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229874
+2026-04-03 19:33:44,160 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229874 | status=200 | duration=12.32s
+2026-04-03 19:34:00,255 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229867
+2026-04-03 19:34:08,752 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229867 | status=200 | duration=8.50s
+2026-04-03 19:34:17,845 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229866
+2026-04-03 19:34:26,322 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229866 | status=200 | duration=8.48s
+2026-04-03 19:34:30,417 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229865
+2026-04-03 19:34:36,946 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229865 | status=200 | duration=6.53s
+2026-04-03 19:34:51,041 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229863
+2026-04-03 19:34:55,567 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229863 | status=200 | duration=4.53s
+2026-04-03 19:35:09,664 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229862
+2026-04-03 19:35:20,055 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229862 | status=200 | duration=10.39s
+2026-04-03 19:35:32,199 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229861
+2026-04-03 19:35:41,687 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229861 | status=200 | duration=9.49s
+2026-04-03 19:35:49,837 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229860
+2026-04-03 19:35:54,342 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229860 | status=200 | duration=4.51s
+2026-04-03 19:36:01,491 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229859
+2026-04-03 19:36:05,953 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229859 | status=200 | duration=4.46s
+2026-04-03 19:36:16,093 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229858
+2026-04-03 19:36:28,536 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229858 | status=200 | duration=12.44s
+2026-04-03 19:36:35,628 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229857
+2026-04-03 19:36:44,083 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229857 | status=200 | duration=8.46s
+2026-04-03 19:36:55,175 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229856
+2026-04-03 19:37:02,732 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229856 | status=200 | duration=7.56s
+2026-04-03 19:37:15,850 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229855
+2026-04-03 19:37:27,278 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229855 | status=200 | duration=11.43s
+2026-04-03 21:00:02,080 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229538
+2026-04-03 21:00:11,914 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229538 | status=200 | duration=9.83s
+2026-04-03 21:00:23,098 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229528
+2026-04-03 21:00:34,691 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229528 | status=200 | duration=11.59s
+2026-04-03 21:00:41,818 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229380
+2026-04-03 21:00:46,436 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229380 | status=200 | duration=4.62s
+2026-04-03 21:00:51,582 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229249
+2026-04-03 21:00:59,243 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229249 | status=200 | duration=7.66s
+2026-04-03 21:01:10,365 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/223818
+2026-04-03 21:01:21,908 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/223818 | status=200 | duration=11.54s
+2026-04-03 21:01:27,084 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219735
+2026-04-03 21:01:39,674 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219735 | status=200 | duration=12.59s
+2026-04-03 21:01:43,865 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/219610
+2026-04-03 21:01:55,442 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/219610 | status=200 | duration=11.58s
+2026-04-03 21:02:44,960 | INFO | atlas.parser | Fetching URL: https://energy-poverty.ec.europa.eu/node/229555
+2026-04-03 21:02:54,737 | INFO | atlas.parser | Fetched URL successfully: https://energy-poverty.ec.europa.eu/node/229555 | status=200 | duration=9.78s
