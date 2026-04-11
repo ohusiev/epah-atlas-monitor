@@ -93,7 +93,7 @@ def format_timestamp(value: str | None) -> str:
     parsed = pd.to_datetime(value, utc=True, errors="coerce")
     if pd.isna(parsed):
         return str(value)
-    return parsed.strftime("%Y-%m-%d")
+    return parsed.strftime("%B %d, %Y") ##"%Y-%m-%d"
 
 
 def format_next_check(value: str | None) -> str:
@@ -105,7 +105,7 @@ def format_next_check(value: str | None) -> str:
     now = pd.Timestamp.now(tz="UTC")
     if parsed <= now:
         return f"Due now ({parsed.strftime('%Y-%m-%d')})" #'%Y-%m-%d'
-    return parsed.strftime("%Y-%m-%d")
+    return parsed.strftime("%B %d, %Y") ##"%Y-%m-%d"
 
 
 def get_latest_local_snapshot() -> Path | None:
@@ -140,11 +140,11 @@ def get_source_dataframe(uploaded_file) -> tuple[pd.DataFrame, str]:
 
 st.title("⚡ Energy Poverty Atlas Dashboard")
 # add subtitle with smaller font and lighter color
-st.caption("This is a local ethical scraper, persistence layer  (with a database backend and optional JSON upload override), and Streamlit dashboard for monitoring and descriptive analytics of projects from the **[European Energy Poverty Advisory Hub (EPAH) Atlas](https://energy-poverty.ec.europa.eu/discover-community/epah-atlas)**. **Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.**")
-startup_pipeline_logs = run_startup_pipeline_once()
-if startup_pipeline_logs:
-    with st.status(label = "Parser pipeline startup information", state ="complete"):#, icon="🔔", duration=7)
-        st.text(startup_pipeline_logs)
+st.caption("This is a local ethical scraper, persistence layer (with a database backend and optional JSON upload override), and Streamlit dashboard for monitoring and descriptive analytics of projects from the **[European Energy Poverty Advisory Hub (EPAH) Atlas](https://energy-poverty.ec.europa.eu/discover-community/epah-atlas)**. **Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.**")
+##startup_pipeline_logs = run_startup_pipeline_once()
+##if startup_pipeline_logs:
+##    with st.status(label = "Parser pipeline startup information", state ="complete"):#, icon="🔔", duration=7)
+##        st.text(startup_pipeline_logs)
 
 with st.sidebar:
     st.header("Data Source")
@@ -175,10 +175,11 @@ recent_projects_df = pd.DataFrame(pipeline_status.get("new_projects", []))
 
 ## st.info(f"Current source: {source_label or 'Unknown'}")
 
-status_col1, status_col2, status_col3 = st.columns(3)
-status_col1.metric("Projects Loaded", len(df_full))
-status_col2.metric("Last Stage 1 Update", last_stage1)
-status_col3.metric("Next Stage 1 Check", next_stage1)
+##status_col1, status_col2, status_col3 = st.columns(3)
+##status_col1.metric("Projects Loaded", len(df_full), new_projects_since_last_update if new_projects_since_last_update > 0 else None)
+##status_col2.metric("Last Scraping Update", last_stage1)
+#status_col3.metric("Next Scraping (Stage 1) Check", next_stage1)
+st.caption(f"Projects Loaded: **{len(df_full)}** | Last Scraping Update: **{last_stage1}** ")##| Next Scraping Check: **{next_stage1}**")
 
 with st.sidebar:
     if source_label:
@@ -224,10 +225,10 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs(
 with tab1:
     st.subheader("Dataset Overview")
     c1, c2, c3, c4, c5, c6 = st.columns(6)
-    c1.metric("Total Projects", len(df))
+    c1.metric("Total Projects", len(df), new_projects_since_last_update if new_projects_since_last_update > 0 else None)
     c2.metric("Countries", len({v for lst in df["countries_impacted_list"] for v in lst}))
     c3.metric("Intervention Types", len({v for lst in df["intervention_type_list"] for v in lst}))
-    c4.metric("Funding Types", df["type_of_funding"].nunique())
+    c4.metric("Funding Types", df["type_of_funding"].nunique(), help = "Simple, unique (non-normalized) count, treats different ways a funding source's name might be mentioned as unique across projects.")
     c5.metric("Geo Scales", df["geographical_scale"].nunique())
     c6.metric("New Since Last Update", new_projects_since_last_update)
 
