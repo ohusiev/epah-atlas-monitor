@@ -569,7 +569,7 @@ with tab1:
                 )
                 c1, c2 = st.columns(2)
                 c1.metric("Countries", filtered_graph.number_of_nodes())
-                c2.metric("Collaborations", filtered_graph.number_of_edges(), help="Edges represent total count of shared projects between countries, filtered by the minimum shared-project count slider.")
+                c2.metric("Collaborations", filtered_graph.number_of_edges(), help="Edges represent shared projects between countries, filtered by the minimum shared-project count slider.")
 
                 if not edge_summary.empty:
                     filtered_edge_summary = edge_summary[
