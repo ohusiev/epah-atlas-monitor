@@ -436,7 +436,7 @@ new_projects_since_last_update = pipeline_status.get("projects_added_since_last_
 recent_projects_df = pd.DataFrame(pipeline_status.get("new_projects", []))
 
 ## st.info(f"Current source: {source_label or 'Unknown'}")
-
+# This shows the last Stage 1 run time and how many new projects were added since then, and when the next Stage 1 check is due, if available.
 ##status_col1, status_col2, status_col3 = st.columns(3)
 ##status_col1.metric("Projects Loaded", len(df_full), new_projects_since_last_update if new_projects_since_last_update > 0 else None)
 ##status_col2.metric("Last Scraping Update", last_stage1)
@@ -474,12 +474,12 @@ if filter_country:
 
 st.sidebar.markdown(f"**{len(df)} / {len(df_full)} projects** shown")
 
-tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
+tab1, tab2, tab3, tab5, tab6 = st.tabs( #tab4 was reserved for a country network graph visualization
     [
         "📊 Overview",
         "📈 Descriptive Stats",
         "🔥 Overlap Heatmap",
-        "🌐 Country Network",
+        #"🌐 Country Network",
         "🗂️ Project Breakdown",
         "🧹 Data Quality",
     ]
@@ -493,14 +493,13 @@ with tab1:
     c3.metric("Intervention Types", len({v for lst in df["intervention_type_list"] for v in lst}))
     c4.metric("Funding Types", df["type_of_funding"].nunique(), help = "Simple, unique (non-normalized) count, treats different ways a funding source's name might be mentioned as unique across projects.")
     c5.metric("Geo Scales", df["geographical_scale"].nunique())
-    c6.metric("New Since Last Update", new_projects_since_last_update)
-
-    st.caption("Recent projects can also be seen in Project Breakdown by sorting the table by `parsed_at`.")
+    c6.metric("New Since Last Update", new_projects_since_last_update if new_projects_since_last_update > 0 else None)
 
     if recent_projects_df.empty:
-        st.info("No new projects were added in the latest Stage 1 update.")
+        st.caption("ℹ️ No new projects were added in the latest scraping update.")
     else:
         #st.markdown("#### New Projects In Latest Update")
+        st.caption("Recent projects can also be seen in Project Breakdown by sorting the table by `parsed_at`.")
         if st.button("Show New Projects In Latest Update", key="show_recent"):
             recent_projects_df = recent_projects_df.rename(
                 columns={
@@ -527,8 +526,91 @@ with tab1:
                 },
             )
 
+    #st.markdown("---")
+    st.subheader("Country Collaboration Network")
 
-    st.markdown("---")
+    if nx is None or Network is None:
+        st.warning(
+            "Install `networkx` and `pyvis` to render the interactive country collaboration network."
+        )
+    else:
+        country_graph, edge_summary = build_country_collaboration_graph(df)
+
+        if country_graph is None or country_graph.number_of_nodes() == 0:
+            st.info("Not enough country data is available to build a collaboration network.")
+        elif country_graph.number_of_edges() == 0:
+            st.info("Projects currently do not share multiple-country collaborations in the filtered dataset.")
+        else:
+            graph_col, table_col = st.columns([3, 1])
+
+            with table_col:
+                available_countries = sorted(country_graph.nodes())
+                selected_countries = st.multiselect(
+                    "Countries to show",
+                    options=available_countries,
+                    default=available_countries,
+                )
+
+                edge_weights = [
+                    attrs.get("weight", 0)
+                    for _, _, attrs in country_graph.edges(data=True)
+                ]
+                min_weight = st.slider(
+                    "Minimum shared-project count",
+                    min_value=1,
+                    max_value=max(edge_weights),
+                    value=1,
+                )
+
+                filtered_graph = filter_country_collaboration_graph(
+                    country_graph,
+                    selected_countries,
+                    min_weight,
+                )
+                c1, c2 = st.columns(2)
+                c1.metric("Countries", filtered_graph.number_of_nodes())
+                c2.metric("Collaborations", filtered_graph.number_of_edges(), help="Edges represent total count of shared projects between countries, filtered by the minimum shared-project count slider.")
+
+                if not edge_summary.empty:
+                    filtered_edge_summary = edge_summary[
+                        edge_summary["country_1"].isin(selected_countries)
+                        & edge_summary["country_2"].isin(selected_countries)
+                        & (edge_summary["shared_projects"] >= min_weight)
+                    ]
+                    #rename columns for better display
+                    st.dataframe(
+                        filtered_edge_summary.rename(columns={
+                        "country_1": "Country 1",
+                        "country_2": "Country 2",
+                        "shared_projects": "Shared Proj."
+                    }),
+                        use_container_width=True,
+                        hide_index=True,
+                        height=260,
+                    )
+
+            with graph_col:
+                if filtered_graph.number_of_edges() == 0:
+                    st.info("No collaborations match the current country selection and minimum weight.")
+                else:
+                    render_country_collaboration_network(filtered_graph)
+
+    fund_counts = df["type_of_funding"].value_counts().reset_index()
+    fund_counts.columns = ["Funding Type", "Projects"]
+    #Graph cloud of words in the funding types, sized by count
+    fig3 = px.treemap(
+        fund_counts,
+        path=["Funding Type"],
+        values="Projects",
+        title="Projects by Funding Type",
+        color="Projects",
+        color_continuous_scale="Greens",
+    )
+    st.plotly_chart(fig3, use_container_width=True)
+
+with tab2:
+    st.subheader("Descriptive Statistics")
+
     col1, col2 = st.columns(2)
 
     with col1:
@@ -567,25 +649,10 @@ with tab1:
             )
             st.plotly_chart(fig2, use_container_width=True)
 
-    fund_counts = df["type_of_funding"].value_counts().reset_index()
-    fund_counts.columns = ["Funding Type", "Projects"]
-    #Graph cloud of words in the funding types, sized by count
-    fig3 = px.treemap(
-        fund_counts,
-        path=["Funding Type"],
-        values="Projects",
-        title="Projects by Funding Type",
-        color="Projects",
-        color_continuous_scale="Greens",
-    )
-    st.plotly_chart(fig3, use_container_width=True)
 
-with tab2:
-    st.subheader("Descriptive Statistics")
+    col3, col4 = st.columns(2)
 
-    col1, col2 = st.columns(2)
-
-    with col1:
+    with col3:
         int_exp = explode_field(df, "intervention_type")
         if not int_exp.empty:
             int_counts = int_exp["intervention_type"].value_counts().reset_index()
@@ -602,7 +669,7 @@ with tab2:
             fig.update_layout(yaxis=dict(autorange="reversed"))
             st.plotly_chart(fig, use_container_width=True)
 
-    with col2:
+    with col4:
         phase_exp = explode_field(df, "energy_poverty_phase")
         if not phase_exp.empty:
             phase_counts = phase_exp["energy_poverty_phase"].value_counts().reset_index()
@@ -618,9 +685,9 @@ with tab2:
             st.plotly_chart(fig2, use_container_width=True)
 
     st.markdown("---")
-    col3, col4 = st.columns(2)
+    col5, col6 = st.columns(2)
 
-    with col3:
+    with col5:
         fig3 = px.histogram(
             df,
             x="country_count",
@@ -631,7 +698,7 @@ with tab2:
         )
         st.plotly_chart(fig3, use_container_width=True)
 
-    with col4:
+    with col6:
         fig4 = px.histogram(
             df,
             x="intervention_count",
@@ -709,70 +776,6 @@ with tab3:
     st.markdown(
         "**ℹ️ How to read this:** Each cell shows how many projects share both row and column attributes. Higher values mean stronger co-occurrence."
     )
-
-with tab4:
-    st.subheader("Country Collaboration Network")
-
-    if nx is None or Network is None:
-        st.warning(
-            "Install `networkx` and `pyvis` to render the interactive country collaboration network."
-        )
-    else:
-        country_graph, edge_summary = build_country_collaboration_graph(df)
-
-        if country_graph is None or country_graph.number_of_nodes() == 0:
-            st.info("Not enough country data is available to build a collaboration network.")
-        elif country_graph.number_of_edges() == 0:
-            st.info("Projects currently do not share multiple-country collaborations in the filtered dataset.")
-        else:
-            graph_col, table_col = st.columns([3, 1])
-
-            with table_col:
-                available_countries = sorted(country_graph.nodes())
-                selected_countries = st.multiselect(
-                    "Countries to show",
-                    options=available_countries,
-                    default=available_countries,
-                )
-
-                edge_weights = [
-                    attrs.get("weight", 0)
-                    for _, _, attrs in country_graph.edges(data=True)
-                ]
-                min_weight = st.slider(
-                    "Minimum shared-project count",
-                    min_value=1,
-                    max_value=max(edge_weights),
-                    value=1,
-                )
-
-                filtered_graph = filter_country_collaboration_graph(
-                    country_graph,
-                    selected_countries,
-                    min_weight,
-                )
-
-                st.metric("Countries", filtered_graph.number_of_nodes())
-                st.metric("Collaborations", filtered_graph.number_of_edges())
-
-                if not edge_summary.empty:
-                    filtered_edge_summary = edge_summary[
-                        edge_summary["country_1"].isin(selected_countries)
-                        & edge_summary["country_2"].isin(selected_countries)
-                        & (edge_summary["shared_projects"] >= min_weight)
-                    ]
-                    st.dataframe(
-                        filtered_edge_summary,
-                        use_container_width=True,
-                        hide_index=True,
-                        height=260,
-                    )
-
-            with graph_col:
-                if filtered_graph.number_of_edges() == 0:
-                    st.info("No collaborations match the current country selection and minimum weight.")
-                else:
-                    render_country_collaboration_network(filtered_graph)
 
 with tab5:
     st.subheader("Per-Project Attribute Breakdown")
