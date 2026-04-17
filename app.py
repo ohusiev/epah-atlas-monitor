@@ -238,39 +238,139 @@ def render_country_collaboration_network(graph, height: int = 750) -> None:
         bgcolor="white",
         font_color="black",
     )
-    network.barnes_hut()
-    #network.set_options(
-    #    """
-    #    {
-    #    "nodes": {
-    #        "font": {
-    #        "size": 16,
-    #        "face": "arial",
-    #        "strokeWidth": 3,
-    #        "strokeColor": "#ffffff"
-    #        }
-    #    }
-    #    }
-    #    """
-    #)
+
+    # Use a light force layout so nodes separate without becoming chaotic.
+    network.set_options("""
+    {
+      "nodes": {
+        "shape": "dot",
+        "margin": 10,
+        "scaling": {
+          "min": 12,
+          "max": 44,
+          "label": {
+            "enabled": true,
+            "min": 14,
+            "max": 24
+          }
+        },
+        "font": {
+          "size": 16,
+          "face": "arial",
+          "strokeWidth": 3,
+          "strokeColor": "#ffffff"
+        }
+      },
+      "edges": {
+        "smooth": {
+          "enabled": true,
+          "type": "dynamic",
+          "roundness": 0.18
+        },
+        "color": {
+          "inherit": false
+        },
+        "width": 1.2
+      },
+      "interaction": {
+        "hover": true,
+        "tooltipDelay": 150,
+        "selectConnectedEdges": true,
+        "navigationButtons": true
+      },
+      "physics": {
+        "enabled": true,
+        "solver": "forceAtlas2Based",
+        "forceAtlas2Based": {
+          "gravitationalConstant": -85,
+          "centralGravity": 0.015,
+          "springLength": 180,
+          "springConstant": 0.045,
+          "damping": 0.72,
+          "avoidOverlap": 1
+        },
+        "minVelocity": 0.75,
+        "stabilization": {
+          "enabled": true,
+          "iterations": 250
+        }
+      }
+    }
+    """)
+
+    # Read project counts to build a relative scale
+    project_counts = [
+        attrs.get("project_count", 0)
+        for _, attrs in graph.nodes(data=True)
+    ]
+    max_project_count = max(project_counts) if project_counts else 1
 
     for node, attrs in graph.nodes(data=True):
         project_count = attrs.get("project_count", 0)
+
+        # Bubble size scaling
+        node_size = 16 + (project_count / max_project_count) * 26 if max_project_count > 0 else 16
+
+        # Simple color scale by importance
+        if project_count >= 0.75 * max_project_count:
+            background = "#4f81bd"
+            border = "#2f5d99"
+        elif project_count >= 0.40 * max_project_count:
+            background = "#7ea6d8"
+            border = "#4f81bd"
+        else:
+            background = "#c6dbef"
+            border = "#7ea6d8"
+
         network.add_node(
             node,
             label=node,
             title=f"{node}\nProjects involved: {project_count}",
-            size=12 + project_count * 4,
-            font = {"size": 40} if project_count >= 5 else {"size": 16}
+            size=node_size,
+            value=project_count,  # supports vis scaling
+            font={
+                "size": 20 if project_count >= 0.5 * max_project_count else 15,
+                "face": "arial",
+                "strokeWidth": 3,
+                "strokeColor": "#ffffff"
+            },
+            color={
+                "background": background,
+                "border": border,
+                "highlight": {
+                    "background": "#ffcc00",
+                    "border": "#cc9900"
+                },
+                "hover": {
+                    "background": "#ffd966",
+                    "border": "#d6a600"
+                }
+            }
         )
+
+    # Edge scale
+    edge_weights = [
+        attrs.get("weight", 0)
+        for _, _, attrs in graph.edges(data=True)
+    ]
+    max_weight = max(edge_weights) if edge_weights else 1
 
     for country_a, country_b, attrs in graph.edges(data=True):
         shared_projects = attrs.get("weight", 0)
+
+        edge_width = 1 + (shared_projects / max_weight) * 4 if max_weight > 0 else 1
+
         network.add_edge(
             country_a,
             country_b,
             value=shared_projects,
+            width=edge_width,
             title=f"{country_a} - {country_b}\nShared projects: {shared_projects}",
+            color={
+                "color": "#b0b0b0",
+                "highlight": "#ff9900",
+                "hover": "#ff9900"
+            }
         )
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=".html") as tmp_file:
