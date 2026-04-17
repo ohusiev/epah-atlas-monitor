@@ -228,6 +228,20 @@ def filter_country_collaboration_graph(graph, selected_countries: list[str], min
     return filtered_graph
 
 
+def freeze_pyvis_physics_after_stabilization(html: str) -> str:
+    network_init = "network = new vis.Network(container, data, options);"
+    freeze_script = """
+              network.once("stabilizationIterationsDone", function () {
+                  network.setOptions({ physics: false });
+              });
+    """
+
+    if network_init in html and freeze_script not in html:
+        return html.replace(network_init, f"{network_init}\n{freeze_script}", 1)
+
+    return html
+
+
 def render_country_collaboration_network(graph, height: int = 750) -> None:
     if Network is None or graph is None:
         return
@@ -276,7 +290,7 @@ def render_country_collaboration_network(graph, height: int = 750) -> None:
         "hover": true,
         "tooltipDelay": 150,
         "selectConnectedEdges": true,
-        "navigationButtons": true
+        "navigationButtons": false
       },
       "physics": {
         "enabled": true,
@@ -379,7 +393,8 @@ def render_country_collaboration_network(graph, height: int = 750) -> None:
     try:
         network.save_graph(temp_html_path)
         with open(temp_html_path, "r", encoding="utf-8") as html_file:
-            components.html(html_file.read(), height=height, scrolling=True)
+            html = freeze_pyvis_physics_after_stabilization(html_file.read())
+            components.html(html, height=height, scrolling=True)
     finally:
         if os.path.exists(temp_html_path):
             os.remove(temp_html_path)
