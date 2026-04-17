@@ -10,6 +10,7 @@ import requests
 import pathlib
 import random
 import re
+import logging
 
 from bs4 import BeautifulSoup
 
@@ -351,7 +352,7 @@ class Stage2Scraper:
         for link_data in project_links:
             project_link = link_data["project_url"]
             atlas_id = link_data["atlas_id"]
-            project_name = link_data["project_name"]
+            #project_name = link_data["project_name"]
             response = fetch_page_response(project_link, session=active_session)
             if not response:
                 LOGGER.error("Skipping project link due to fetch failure: %s", project_link)
@@ -359,7 +360,7 @@ class Stage2Scraper:
 
             parsed_project = {
                 "atlas_id": atlas_id,
-                "project_name": project_name,
+                #"project_name": project_name,
                 "project_url": project_link,
                 "project_title": self.scrape_title(response.text),
                 "project_scope": self.scrape_scope(response.text),
@@ -431,13 +432,12 @@ def filter_new_projects(
         and project_id not in previous_project_ids
     ]
 
-
 def get_latest_stage1_output_path() -> pathlib.Path:
     matches = sorted(RAW_DIR.glob("epah_list_atlas_projects_*.json"))
+    LOGGER.info("Found %d stage 1 output files in %s", len(matches), RAW_DIR)
     if not matches:
         raise FileNotFoundError("No epah_list_atlas_projects_*.json file found in data/raw.")
     return matches[-1]
-
 
 def runStageOne() -> list[dict[str, Any]]:
     global LOCAL_OUTPUT_PATH
@@ -505,18 +505,20 @@ def runStageOneWithControl(min_timestamp_difference_seconds: float) -> list[dict
     return new_projects
 
 
-def runStageTwo() -> None:
+def runStageTwo() -> list[dict[str, Any]]:
     stage2Parser = Stage2Scraper()
     input_path = LOCAL_OUTPUT_PATH or get_latest_stage1_output_path()
     detailed_projects = stage2Parser.parse_links_file(input_path, session=requests.session())
-    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-
-    output_path = RAW_DIR / f"epah_details_atlas_projects_{timestamp}.json"
-    detailed_output_path = save_projects_to_json(detailed_projects, output_path)
-    LOGGER.info("Saved detailed parsed projects to: %s", detailed_output_path)
+    
+    return detailed_projects
 
 
 if __name__ == "__main__":
+    # For quick testing of the parser without running the full orchestrator
     LOGGER.info("RAW_DIR: %s", RAW_DIR)
     runStageOneWithControl(min_timestamp_difference_seconds=24 * 60 * 60)
-    #runStageTwo()
+    #detailed_projects = runStageTwo()
+    #timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    #output_path = RAW_DIR / f"epah_details_atlas_projects_{timestamp}.json"
+    #detailed_output_path = save_projects_to_json(detailed_projects, output_path)
+    #LOGGER.info("Saved detailed parsed projects to: %s", detailed_output_path)

@@ -73,6 +73,7 @@ def _stage1_is_fresh() -> bool:
     if not latest:
         return False
     finished = datetime.fromisoformat(latest["finished_at"])
+    LOGGER.info("Latest successful Stage 1 run finished at: %s (age: %s)", finished.strftime("%Y-%m-%d %H:%M %Z"), datetime.now(timezone.utc)- finished)
     age = datetime.now(timezone.utc) - finished
     return age < timedelta(hours=STAGE1_MAX_AGE_HOURS)
 
