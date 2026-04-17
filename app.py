@@ -2,11 +2,23 @@ from __future__ import annotations
 
 import io
 import logging
+import os
+import tempfile
+from collections import Counter
+from itertools import combinations
 from pathlib import Path
 
 import pandas as pd
 import plotly.express as px
 import streamlit as st
+import streamlit.components.v1 as components
+
+try:
+    import networkx as nx
+    from pyvis.network import Network
+except ImportError:
+    nx = None
+    Network = None
 
 from etl import (
     cooccurrence_matrix,
@@ -138,6 +150,141 @@ def get_source_dataframe(uploaded_file) -> tuple[pd.DataFrame, str]:
     return pd.DataFrame(), ""
 
 
+def build_country_collaboration_graph(
+    dataframe: pd.DataFrame,
+    countries_column: str = "countries_impacted_list",
+):
+    if nx is None or countries_column not in dataframe.columns:
+        return None, pd.DataFrame()
+
+    country_counts: Counter[str] = Counter()
+    pair_counts: Counter[tuple[str, str]] = Counter()
+
+    for raw_countries in dataframe[countries_column].dropna():
+        if isinstance(raw_countries, list):
+            countries = sorted({str(country).strip() for country in raw_countries if str(country).strip()})
+        else:
+            countries = sorted(
+                {
+                    country.strip()
+                    for country in str(raw_countries).split(";")
+                    if country.strip()
+                }
+            )
+
+        for country in countries:
+            country_counts[country] += 1
+
+        if len(countries) >= 2:
+            pair_counts.update(combinations(countries, 2))
+
+    graph = nx.Graph()
+
+    for country, count in country_counts.items():
+        graph.add_node(country, project_count=count)
+
+    for (country_a, country_b), weight in pair_counts.items():
+        graph.add_edge(country_a, country_b, weight=weight)
+
+    edge_summary = pd.DataFrame(
+        [
+            {
+                "country_1": country_a,
+                "country_2": country_b,
+                "shared_projects": weight,
+            }
+            for (country_a, country_b), weight in pair_counts.items()
+        ]
+    )
+
+    if not edge_summary.empty:
+        edge_summary = edge_summary.sort_values(
+            by=["shared_projects", "country_1", "country_2"],
+            ascending=[False, True, True],
+        ).reset_index(drop=True)
+
+    return graph, edge_summary
+
+
+def filter_country_collaboration_graph(graph, selected_countries: list[str], min_weight: int):
+    if nx is None or graph is None:
+        return None
+
+    filtered_graph = nx.Graph()
+    selected_country_set = set(selected_countries)
+
+    for node, attrs in graph.nodes(data=True):
+        if node in selected_country_set:
+            filtered_graph.add_node(node, **attrs)
+
+    for country_a, country_b, attrs in graph.edges(data=True):
+        if (
+            country_a in selected_country_set
+            and country_b in selected_country_set
+            and attrs.get("weight", 0) >= min_weight
+        ):
+            filtered_graph.add_edge(country_a, country_b, **attrs)
+
+    return filtered_graph
+
+
+def render_country_collaboration_network(graph, height: int = 750) -> None:
+    if Network is None or graph is None:
+        return
+
+    network = Network(
+        height=f"{height}px",
+        width="100%",
+        bgcolor="white",
+        font_color="black",
+    )
+    network.barnes_hut()
+    #network.set_options(
+    #    """
+    #    {
+    #    "nodes": {
+    #        "font": {
+    #        "size": 16,
+    #        "face": "arial",
+    #        "strokeWidth": 3,
+    #        "strokeColor": "#ffffff"
+    #        }
+    #    }
+    #    }
+    #    """
+    #)
+
+    for node, attrs in graph.nodes(data=True):
+        project_count = attrs.get("project_count", 0)
+        network.add_node(
+            node,
+            label=node,
+            title=f"{node}\nProjects involved: {project_count}",
+            size=12 + project_count * 4,
+            font = {"size": 40} if project_count >= 5 else {"size": 16}
+        )
+
+    for country_a, country_b, attrs in graph.edges(data=True):
+        shared_projects = attrs.get("weight", 0)
+        network.add_edge(
+            country_a,
+            country_b,
+            value=shared_projects,
+            title=f"{country_a} - {country_b}\nShared projects: {shared_projects}",
+        )
+
+    with tempfile.NamedTemporaryFile(delete=False, suffix=".html") as tmp_file:
+        temp_html_path = tmp_file.name
+
+    try:
+        network.save_graph(temp_html_path)
+        with open(temp_html_path, "r", encoding="utf-8") as html_file:
+            components.html(html_file.read(), height=height, scrolling=True)
+    finally:
+        if os.path.exists(temp_html_path):
+            os.remove(temp_html_path)
+
+
 st.title("⚡ Energy Poverty Atlas Dashboard")
 # add subtitle with smaller font and lighter color
 st.caption("This is a local ethical scraper, persistence layer (with a database backend and optional JSON upload override), and Streamlit dashboard for monitoring and descriptive analytics of projects from the **[European Energy Poverty Advisory Hub (EPAH) Atlas](https://energy-poverty.ec.europa.eu/discover-community/epah-atlas)**. **Used only in research and educational purposes, not affiliated with or endorsed by the EPAH or the European Commission.**")
@@ -212,11 +359,12 @@ if filter_country:
 
 st.sidebar.markdown(f"**{len(df)} / {len(df_full)} projects** shown")
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(
+tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs(
     [
         "📊 Overview",
         "📈 Descriptive Stats",
         "🔥 Overlap Heatmap",
+        "🌐 Country Network",
         "🗂️ Project Breakdown",
         "🧹 Data Quality",
     ]
@@ -448,6 +596,70 @@ with tab3:
     )
 
 with tab4:
+    st.subheader("Country Collaboration Network")
+
+    if nx is None or Network is None:
+        st.warning(
+            "Install `networkx` and `pyvis` to render the interactive country collaboration network."
+        )
+    else:
+        country_graph, edge_summary = build_country_collaboration_graph(df)
+
+        if country_graph is None or country_graph.number_of_nodes() == 0:
+            st.info("Not enough country data is available to build a collaboration network.")
+        elif country_graph.number_of_edges() == 0:
+            st.info("Projects currently do not share multiple-country collaborations in the filtered dataset.")
+        else:
+            graph_col, table_col = st.columns([3, 1])
+
+            with table_col:
+                available_countries = sorted(country_graph.nodes())
+                selected_countries = st.multiselect(
+                    "Countries to show",
+                    options=available_countries,
+                    default=available_countries,
+                )
+
+                edge_weights = [
+                    attrs.get("weight", 0)
+                    for _, _, attrs in country_graph.edges(data=True)
+                ]
+                min_weight = st.slider(
+                    "Minimum shared-project count",
+                    min_value=1,
+                    max_value=max(edge_weights),
+                    value=1,
+                )
+
+                filtered_graph = filter_country_collaboration_graph(
+                    country_graph,
+                    selected_countries,
+                    min_weight,
+                )
+
+                st.metric("Countries", filtered_graph.number_of_nodes())
+                st.metric("Collaborations", filtered_graph.number_of_edges())
+
+                if not edge_summary.empty:
+                    filtered_edge_summary = edge_summary[
+                        edge_summary["country_1"].isin(selected_countries)
+                        & edge_summary["country_2"].isin(selected_countries)
+                        & (edge_summary["shared_projects"] >= min_weight)
+                    ]
+                    st.dataframe(
+                        filtered_edge_summary,
+                        use_container_width=True,
+                        hide_index=True,
+                        height=260,
+                    )
+
+            with graph_col:
+                if filtered_graph.number_of_edges() == 0:
+                    st.info("No collaborations match the current country selection and minimum weight.")
+                else:
+                    render_country_collaboration_network(filtered_graph)
+
+with tab5:
     st.subheader("Per-Project Attribute Breakdown")
     st.caption("Recent projects can also be found here by sorting the table by `parsed_at`.")
 
@@ -517,7 +729,7 @@ with tab4:
 
     st.markdown("---")
 
-with tab5:
+with tab6:
     st.subheader("🧹 Data Quality Report")
     dq = data_quality_report(df)
     # remove 'website' from the report as it's not a critical field and often legitimately missing
