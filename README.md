@@ -4,6 +4,8 @@ This is a local ethical scraper, persistence layer  (with a database backend and
 
 **Deployed for demonstration at:** https://epah-atlas-monitor.streamlit.app/
 
+![Energy Poverty Atlas Monitor Dashboard](data/Screenshot-Energy Poverty Atlas Dashboard.png)
+
 ## What This Project Does
 
 This repository combines three pieces:
